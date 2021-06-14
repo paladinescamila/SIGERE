@@ -1,0 +1,26 @@
+@import url("normalize.css");
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-or-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 70%;
+    box-shadow: 0 0 30px 1px #aaa;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

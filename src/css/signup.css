@@ -25,18 +25,9 @@ form {
   grid-row: 1 / 2;
 }
 
-.signup-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eee;
-}
-
 form.sign-up-form {
-    width: 40%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
 }
 
@@ -150,6 +141,17 @@ form.sign-up-form {
 .right-panel .image,
 .right-panel .content {
   transform: translateX(800px);
+}
+
+.login-message{
+  padding: 2em 1em 0 1em;
+}
+
+.login-button{
+  cursor: pointer;
+  color: #4481eb;
+  text-decoration-line: underline;
+  padding: 0.5em;
 }
 
 /* @media (max-width: 870px) {
