@@ -1,5 +1,7 @@
 import '../css/login.css';
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Signup } from './Signup';
 
 export function Login() {
     
@@ -11,7 +13,7 @@ export function Login() {
     }
 
     return (
-        <>
+        <Router>
         <div class="login-container">
             <form action="#" class="sign-in-form">
                 <h2 class="title">Inicia Sesión</h2>
@@ -39,9 +41,10 @@ export function Login() {
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 </div>
-                <p>O prefieres <a onClick={registrarse}>registrarte</a></p>
+                <p>O prefieres <Link to="/signup">registrarte</Link></p>
             </form>
+            <Route path="/signup" component={Signup} />
         </div>
-        </>
+        </Router>
     )
 }
