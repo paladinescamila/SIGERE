@@ -4,6 +4,7 @@ import React, {Fragment, useState, useRef, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Login } from './components/Login.jsx';
 import { Signup } from './components/Signup.jsx';
+import { Header } from './components/Header.jsx';
 
 
 function App() {
