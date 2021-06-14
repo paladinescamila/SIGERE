@@ -67,11 +67,16 @@
     border-radius: 4px;
 }
 .nav-text a:hover{
-    background-color:  #1a83ff;
+    background-color:  #8190a5;
 }
 
 .nav-menu-items{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 .navbar-toggle{
     background-color: #f9fafc;
@@ -82,6 +87,18 @@
     align-items: center;
 }
 
+
+.navbar-close{
+    margin-left: 32px;
+}
+
+.btn.solid{
+    background-color: #8190a5;
+}
+
+.btn.solid:hover{
+    background-color: #8190a5;
+}
 span{
     margin-left: 16px;
 }

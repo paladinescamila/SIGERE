@@ -21,8 +21,8 @@ function Asside() {
                 </div>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showSidebar}>
-                    <li className="navbar-toggle">
+                <ul className='nav-menu-items'>
+                    <li className="navbar-toggle"  onClick={showSidebar}>
                         <Link to="#" className='menu-bars'>
                             <AiIcons.AiOutlineCloseCircle />
                         </Link>
@@ -37,6 +37,9 @@ function Asside() {
                             </li>
                         )
                     })}
+                    <li className="navbar-toggle navbar-close">
+                        <input type="submit" value="Cerrar Sesión" class="btn solid" />
+                    </li>
                 </ul>
             </nav>
         </>
