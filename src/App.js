@@ -1,8 +1,10 @@
 import './css/App.css';
+import Asside from './components/Asside.jsx';
 import React, {Fragment, useState, useRef, useEffect} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Login } from './components/Login.jsx';
 import { Signup } from './components/Signup.jsx';
+
 
 function App() {
 
@@ -18,11 +20,20 @@ function App() {
   
   return (
     <>
-      <div class="container">
+    <Router>
+      <Asside/>
+      <Switch>
+        <Route path='/'/>
+      </Switch>
+    </Router>
+      
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
+
+
     </>
   );
 }
