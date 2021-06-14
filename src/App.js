@@ -21,8 +21,7 @@ function App() {
   
   return (
     <>
-      <Header />
-      
+    <Header />      
       {/* <div class="container">
         <div class="login-or-signup">
           {display}
