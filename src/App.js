@@ -21,12 +21,7 @@ function App() {
   
   return (
     <>
-    <Router>
-      <Asside/>
-      <Switch>
-        <Route path='/'/>
-      </Switch>
-    </Router>
+      <Header />
       
       {/* <div class="container">
         <div class="login-or-signup">
