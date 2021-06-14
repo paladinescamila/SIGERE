@@ -1,9 +1,10 @@
 header {
     /* background-color: aqua; */
+    /*width: 90vw;*/
     display: flex;
     justify-content: space-between;
     padding: 0.5em;
-    box-shadow: 0 0 5px 1px #aaa;
+    /*box-shadow: 0 0 5px 1px #aaa;*/
 }
 
 .header-menu{
