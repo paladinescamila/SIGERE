@@ -11,6 +11,7 @@ import requirementsData from "./data/requirementsData";
 import CreateProjectWindow from './components/CreateProjectWindow.jsx';
 import ProjectsList from './components/ProjectsList.jsx';
 import IntroductionSection from './components/IntroductionSection.jsx';
+import AccountSettings from './components/AccountSettings.jsx';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
   
   return (
     <>
-    <IntroductionSection/>
+    <AccountSettings/>
     {/* <Router>
       <Asside/>
       <Switch>
