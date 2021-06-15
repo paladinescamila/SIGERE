@@ -13,7 +13,7 @@ export default function ProjectItem({project}) {
                     <div className="project-progress-bar">
                         <div style={{width: project.progress + "%"}}className="project-progress"></div>
                     </div>
-                    <p className="progress-number">{project.progress} %</p>
+                    <p className="progress-number">{project.progress}%</p>
                 </div>
                 <div className="admin-card">
                     <img src={adminIcon} alt="Project admin"></img>

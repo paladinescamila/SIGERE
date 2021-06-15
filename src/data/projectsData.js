@@ -4,7 +4,7 @@ const projects = [
         name: "Sigere", 
         description: "Este proyecto va a construir una página web.",
         version: "5",
-        progress: 25,
+        progress: 16,
         admin: "Lorem ipsum"
     },
     {

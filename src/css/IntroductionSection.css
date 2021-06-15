@@ -1,0 +1,18 @@
+.purpose, .scope, .glossary, .references, .overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduction-inputs p{
+    margin: 1em 0 0.5em 0;
+}
+
+.introduction-inputs textarea{
+    background-color: #fcfcfc;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    outline: none;
+    resize: none;
+    padding: 1em;
+}

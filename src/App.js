@@ -10,6 +10,7 @@ import RequirementCard from './components/RequirementCard.jsx';
 import requirementsData from "./data/requirementsData";
 import CreateProjectWindow from './components/CreateProjectWindow.jsx';
 import ProjectsList from './components/ProjectsList.jsx';
+import IntroductionSection from './components/IntroductionSection.jsx';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   
   return (
     <>
-    <ProjectsList/>
+    <IntroductionSection/>
     {/* <Router>
       <Asside/>
       <Switch>
