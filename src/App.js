@@ -12,6 +12,7 @@ import CreateProjectWindow from './components/CreateProjectWindow.jsx';
 import ProjectsList from './components/ProjectsList.jsx';
 import IntroductionSection from './components/IntroductionSection.jsx';
 import AccountSettings from './components/AccountSettings.jsx';
+import ArtifactsTable from './components/ArtifactsTable.jsx';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   
   return (
     <>
-    <AccountSettings/>
+    <ArtifactsTable />
     {/* <Router>
       <Asside/>
       <Switch>

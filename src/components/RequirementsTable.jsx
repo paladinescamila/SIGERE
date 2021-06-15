@@ -6,8 +6,7 @@ import React from 'react';
 export default function RequirementsTable() {
 
     return (
-        <>
-        <table>
+        <table className="req-table">
             <tr>
                 <th>ID</th>
                 <th>Descripción</th>
@@ -23,6 +22,5 @@ export default function RequirementsTable() {
                 requirementsData.map((r) => <RequirementItem requirement={r} />)
             }
         </table>
-        </>
     )
 }

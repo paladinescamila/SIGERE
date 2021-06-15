@@ -1,12 +1,12 @@
-.id{
+.req-item .id{
     font-weight: bold;
 }
 
-.description{
+.req-item .description{
     text-align: left;
 }
 
-.state p{
+.req-item .state p{
     padding: 0.2em;
     color: #fff;
     border-radius: 0.3em;

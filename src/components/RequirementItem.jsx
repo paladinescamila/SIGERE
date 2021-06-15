@@ -13,7 +13,7 @@ export default function RequirementItem({requirement}) {
     ]);
 
     return (
-        <tr>
+        <tr className="req-item">
             <td className="id">{requirement.id}</td>
             <td className="description">{requirement.description}</td>
             <td className="state"><p style={{backgroundColor: stateColors.get(requirement.state)}}>{requirement.state}</p></td>
