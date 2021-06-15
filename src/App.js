@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Login } from './components/Login.jsx';
 import { Signup } from './components/Signup.jsx';
 import { Header } from './components/Header.jsx';
+import RequirementsTable from './components/RequirementsTable.jsx';
 
 
 function App() {
@@ -21,7 +22,13 @@ function App() {
   
   return (
     <>
-    <Header />      
+      <RequirementsTable />
+    {/* <Router>
+      <Asside/>
+      <Switch>
+        <Route path='/'/>
+      </Switch>
+    </Router> */}
       {/* <div class="container">
         <div class="login-or-signup">
           {display}
