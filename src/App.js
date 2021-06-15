@@ -8,6 +8,7 @@ import { Header } from './components/Header.jsx';
 import RequirementsTable from './components/RequirementsTable.jsx';
 import RequirementCard from './components/RequirementCard.jsx';
 import requirementsData from "./data/requirementsData";
+import CreateProjectWindow from './components/CreateProjectWindow.jsx';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   
   return (
     <>
-    <RequirementCard requirement={requirementsData[2]} />
+    <CreateProjectWindow/>
     {/* <Router>
       <Asside/>
       <Switch>

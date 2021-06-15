@@ -11,6 +11,7 @@
 .requirementCardFields{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .requirementCardFields > div{
@@ -48,7 +49,8 @@ select{
     font-weight: bold;
     font-size: 1.5em;
     display: flex;
-    padding: 0.5em;
+    padding: 0 0 0.5em 0;
+    align-self: center;
 }
 
 .req-description textarea{
@@ -68,24 +70,22 @@ select{
     padding: 0.5em 1.5em;
     border-radius: 0.3em;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .req-cancel{
     color: #333;
     background-color: transparent;
-    font-weight: 600;
 }
 
 .req-delete{
     color: #ff3333;
     background-color: transparent;
-    font-weight: 600;
 }
 
 .req-save{
     color: #fff;
     background-color: #192353;
-    font-weight: 600;
 }
 
 .req-cancel:hover{
