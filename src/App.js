@@ -6,6 +6,8 @@ import { Login } from './components/Login.jsx';
 import { Signup } from './components/Signup.jsx';
 import { Header } from './components/Header.jsx';
 import RequirementsTable from './components/RequirementsTable.jsx';
+import RequirementCard from './components/RequirementCard.jsx';
+import requirementsData from "./data/requirementsData";
 
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
   
   return (
     <>
-      <RequirementsTable />
+    <RequirementCard requirement={requirementsData[2]} />
     {/* <Router>
       <Asside/>
       <Switch>

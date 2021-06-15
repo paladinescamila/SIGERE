@@ -7,8 +7,8 @@ const requirements = [
         type: "Funcional", 
         priority: 7,
         version: "5",
-        created: Date(2021, 6, 12),
-        modified: Date(2021, 6, 14),
+        created: "13/06/2021",
+        modified: "14/06/2021",
     },
     {
         id: "R002", 
@@ -18,8 +18,8 @@ const requirements = [
         type: "Funcional", 
         priority: 2,
         version: "3",
-        created: Date(2021, 6, 10),
-        modified: Date(2021, 6, 13),
+        created: "13/06/2021",
+        modified: "14/06/2021",
     },
     {
         id: "R003", 
@@ -29,8 +29,8 @@ const requirements = [
         type: "Funcional", 
         priority: 2,
         version: "3",
-        created: Date(2021, 6, 10),
-        modified: Date(2021, 6, 13),
+        created: "13/06/2021",
+        modified: "14/06/2021",
     },
     {
         id: "R004", 
@@ -40,8 +40,8 @@ const requirements = [
         type: "Funcional", 
         priority: 2,
         version: "3",
-        created: Date(2021, 6, 10),
-        modified: Date(2021, 6, 13),
+        created: "13/06/2021",
+        modified: "14/06/2021",
     },
     {
         id: "R005", 
@@ -51,8 +51,8 @@ const requirements = [
         type: "Funcional", 
         priority: 2,
         version: "3",
-        created: Date(2021, 6, 10),
-        modified: Date(2021, 6, 13),
+        created: "13/06/2021",
+        modified: "14/06/2021",
     },
 ];
 
