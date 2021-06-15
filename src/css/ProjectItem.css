@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.progress-bar-and-admin > div{
+.progress-bar{
     width: 50%;
     display: flex;
     align-items: center;
@@ -45,4 +45,17 @@
     background-color: #bbb;
     height: 100%;
     border-radius: 0.5em;
+}
+
+.admin-card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    height: 1.3em;
+}
+
+.admin-card img{
+    height: 100%;
+    margin: 0 0.5em 0 0;
 }
