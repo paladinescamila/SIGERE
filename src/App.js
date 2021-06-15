@@ -9,6 +9,7 @@ import RequirementsTable from './components/RequirementsTable.jsx';
 import RequirementCard from './components/RequirementCard.jsx';
 import requirementsData from "./data/requirementsData";
 import CreateProjectWindow from './components/CreateProjectWindow.jsx';
+import ProjectsList from './components/ProjectsList.jsx';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
   
   return (
     <>
-    <CreateProjectWindow/>
+    <ProjectsList/>
     {/* <Router>
       <Asside/>
       <Switch>
@@ -37,8 +38,6 @@ function App() {
           {display}
         </div>
       </div> */}
-
-
     </>
   );
 }

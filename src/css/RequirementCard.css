@@ -31,7 +31,9 @@
     height: 2.5em;
 }
 
-input, textarea, select{
+.requirement-card > input, 
+.requirement-card > textarea, 
+.requirement-card > select{
     background-color: #fafafa;
     border: 0.1em solid #ccc;
     padding: 1em;
@@ -41,7 +43,7 @@ input, textarea, select{
     height: 100%;
 }
 
-select{
+.requirement-card > select{
     padding: 0.5em;
 }
 
