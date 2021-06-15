@@ -17,7 +17,7 @@ function Asside() {
                     <FaIcons.FaBars onClick={showSidebar}/>
                 </Link>
                 <div className={sidebar ? 'header-n moved' : 'header-n'}>
-                <Header/>
+                    <Header/>
                 </div>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

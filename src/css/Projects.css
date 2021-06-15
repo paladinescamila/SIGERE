@@ -1,0 +1,36 @@
+.searcher-header{
+    display:  flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.searcher-search{
+    margin-right: 2em;
+    /* background-color: darkmagenta; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.searcher-search .search {
+    border-radius: 1em;
+    margin: 0 0.5em;
+    border: 1px solid  #ccc;
+    padding: 0.5em 1em;
+    outline: none;
+}
+
+.searcher-search img{
+    /* background-color: darkslateblue; */
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    position: relative;
+    right: 2em;
+    cursor: pointer;
+}
+
+.searcher-header h2{
+    margin-left: 20px;
+}
+
+

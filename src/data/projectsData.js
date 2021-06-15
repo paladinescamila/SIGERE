@@ -23,6 +23,22 @@ const projects = [
         progress: 57,
         admin: "No"
     },
+    {
+        id: "Project-004",
+        name: "Un tercer proyecto", 
+        description: "Este proyecto va a construir una página web.",
+        version: "5",
+        progress: 57,
+        admin: "No"
+    },
+    {
+        id: "Project-005",
+        name: "Un tercer proyecto", 
+        description: "Este proyecto va a construir una página web.",
+        version: "5",
+        progress: 57,
+        admin: "No"
+    },
 ];
 
 export default projects;
