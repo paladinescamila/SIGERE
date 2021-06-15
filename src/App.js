@@ -12,6 +12,7 @@ import CreateProjectWindow from './components/CreateProjectWindow.jsx';
 import ProjectsList from './components/ProjectsList.jsx';
 import IntroductionSection from './components/IntroductionSection.jsx';
 import AccountSettings from './components/AccountSettings.jsx';
+import AssideAccount from './components/AssideAccount';
 
 
 function App() {
@@ -28,13 +29,13 @@ function App() {
   
   return (
     <>
-    <AccountSettings/>
-    {/* <Router>
-      <Asside/>
+    {/* <AccountSettings/> */}
+    <Router>
+      <AssideAccount/>
       <Switch>
         <Route path='/'/>
       </Switch>
-    </Router> */}
+    </Router>
       {/* <div class="container">
         <div class="login-or-signup">
           {display}
