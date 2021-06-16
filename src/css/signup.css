@@ -22,12 +22,16 @@
 }
 
 .signup-form-user, .signup-form-pass{
-  border: none;
+  border: 0.15em solid #efefef;
   outline: none;
   background-color: #efefef;
   padding: 1.2em;
   border-radius: 2em;
   width: 100%;
+}
+
+.signup-form-user:focus, .signup-form-pass:focus{
+  border: 0.15em solid #ccc;
 }
 
 .signup-form-button{

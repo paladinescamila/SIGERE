@@ -22,12 +22,16 @@
 }
 
 .login-form-user, .login-form-pass{
-  border: none;
+  border: 0.15em solid #efefef;
   outline: none;
   background-color: #efefef;
   padding: 1.2em;
   border-radius: 2em;
   width: 100%;
+}
+
+.login-form-user:focus, .login-form-pass:focus{
+  border: 0.15em solid #ccc;
 }
 
 .login-form-button{
