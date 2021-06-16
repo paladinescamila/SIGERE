@@ -49,12 +49,12 @@
 }
 
 .add-art-save{
-    background-color: var(--blue-2);
+    background-color: var(--blue-1);
     color: #fff;
 }
 
 .add-art-save:hover{
-    background-color: var(--blue-1);
+    background-color: var(--blue-2);
 }
 
 .add-art-file input{

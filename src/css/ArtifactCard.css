@@ -47,7 +47,7 @@
 }
 
 .artifact-card-save{
-    background-color: var(--blue-2);
+    background-color: var(--blue-1);
     color: #fff;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .artifact-card-save:hover{
-    background-color: var(--blue-1);
+    background-color: var(--blue-2);
 }
 
 .artifact-card-file a{

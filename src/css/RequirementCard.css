@@ -92,7 +92,7 @@
 
 .req-save{
     color: #fff;
-    background-color: var(--blue-2);
+    background-color: var(--blue-1);
 }
 
 .req-cancel:hover{
@@ -104,5 +104,5 @@
 }
 
 .req-save:hover{
-    background-color: var(--blue-1);
+    background-color: var(--blue-2);
 }

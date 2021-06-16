@@ -35,6 +35,17 @@ function App() {
   
   return (
     <>
+    <AccountSettings/>
+    <AddArtifactWindow/>
+    <AddRequirementWindow/>
+    <ArtifactCard artifact={artifactsData[0]}/>
+    <ArtifactsTable/>
+    <CreateProjectWindow/>
+    <Header/>
+    <IntroductionSection/>
+    <ProjectsList/>
+    <RequirementCard requirement={requirementsData[0]}/>
+    <RequirementsTable/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
