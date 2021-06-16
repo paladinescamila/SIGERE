@@ -38,11 +38,11 @@
     height: 0.5em;
     width: 90%;
     border-radius: 0.5em;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .project-progress{
-    background-color: #bbb;
+    background-color: #999;
     height: 100%;
     border-radius: 0.5em;
 }
