@@ -14,9 +14,9 @@
 .searcher-search .search {
     border-radius: 1em;
     margin: 0 0.5em;
-    border: 1px solid  #ccc;
     padding: 0.5em 1em;
-    outline: none;
+    background-color: #fff;
+    border: 0.15em solid #efefef;
 }
 
 .searcher-search img{

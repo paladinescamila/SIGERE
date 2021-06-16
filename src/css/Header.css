@@ -27,12 +27,10 @@ header {
 }
 
 .header-search .search {
-    border-radius: 1em;
+    border-radius: 2em;
     margin: 0 0.5em;
     padding: 0.5em 1em;
-    outline: none;
     background-color: #fff;
-    border: 0.15em solid #efefef;
 }
 
 .header-search img{

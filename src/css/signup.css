@@ -62,3 +62,7 @@
   color: var(--blue-3);
   cursor: pointer;
 }
+
+.signup-form-signup:hover{
+  color: var(--blue-2);
+}

@@ -31,19 +31,27 @@ function App() {
   
   return (
     <>
-    {/* <Router>
+    {/* <AccountSettings/>
+    <ArtifactsTable/>
+    <CreateProjectWindow/>
+    <Header/>
+    <IntroductionSection/>
+    <ProjectsList/>
+    <RequirementCard requirement={requirementsData[0]}/>
+    <RequirementsTable/> */}
+    <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
 
       </Switch>
-    </Router> */}
-      <div class="container">
+    </Router>
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
