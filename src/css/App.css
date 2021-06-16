@@ -24,3 +24,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.proyect-n.moved{
+    width: 80vw;
+    transition: 350ms;
+}
+
+.proyect-n{
+    width: 100vw;
+    transition: 850ms;
+}

@@ -14,6 +14,7 @@ import IntroductionSection from './components/IntroductionSection.jsx';
 import AccountSettings from './components/AccountSettings.jsx';
 import ArtifactsTable from './components/ArtifactsTable.jsx';
 import AssideAccount from './components/AssideAccount';
+import Projects from './components/Projects';
 
 
 function App() {
@@ -36,7 +37,9 @@ function App() {
     {/* <Router>
       <AssideAccount/>
       <Switch>
-        <Route path='/'/>
+        <Route path='/' exact component={Projects}/>
+        <Route path='/requirements' component={AccountSettings}/>
+
       </Switch>
     </Router> */}
       <div class="container">
