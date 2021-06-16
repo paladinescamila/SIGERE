@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("normalize.css");
+
+:root{
+    --blue-1: #0F2F4D;
+    --blue-2: #13324F;
+    --blue-3: #1D5D99;
+    --blue-4: #267CCC;
+    --blue-5: #4D93D5;
+
+    --gray-1: #aaa;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}

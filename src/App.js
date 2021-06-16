@@ -33,17 +33,17 @@ function App() {
     {/* <Router>
       <Asside/>
     {/* <AccountSettings/> */}
-    <Router>
+    {/* <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/'/>
       </Switch>
-    </Router>
-      {/* <div class="container">
+    </Router> */}
+      <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
