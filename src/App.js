@@ -7,7 +7,6 @@ import { Signup } from './components/Signup.jsx';
 import { Header } from './components/Header.jsx';
 import RequirementsTable from './components/RequirementsTable.jsx';
 import RequirementCard from './components/RequirementCard.jsx';
-import requirementsData from "./data/requirementsData";
 import CreateProjectWindow from './components/CreateProjectWindow.jsx';
 import ProjectsList from './components/ProjectsList.jsx';
 import IntroductionSection from './components/IntroductionSection.jsx';
@@ -15,6 +14,9 @@ import AccountSettings from './components/AccountSettings.jsx';
 import ArtifactsTable from './components/ArtifactsTable.jsx';
 import AssideAccount from './components/AssideAccount';
 import Projects from './components/Projects';
+import ArtifactCard from './components/ArtifactCard.jsx';
+import requirementsData from "./data/requirementsData";
+import artifactsData from "./data/artifactsData";
 
 
 function App() {
@@ -31,22 +33,15 @@ function App() {
   
   return (
     <>
-    {/* <AccountSettings/>
-    <ArtifactsTable/>
-    <CreateProjectWindow/>
-    <Header/>
-    <IntroductionSection/>
-    <ProjectsList/>
-    <RequirementCard requirement={requirementsData[0]}/>
-    <RequirementsTable/> */}
-    <Router>
+    <ArtifactCard artifact={artifactsData[0]}/>
+    {/* <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
 
       </Switch>
-    </Router>
+    </Router> */}
       {/* <div class="container">
         <div class="login-or-signup">
           {display}

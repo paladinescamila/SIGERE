@@ -9,7 +9,7 @@ export default function ArtifactsTable() {
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Tipo</th>
+                <th>Fecha de subida</th>
                 <th>Categoría</th>
             </tr>
             {

@@ -6,7 +6,7 @@ export default function ArtifactItem({artifact}) {
         <tr className="art-item">
             <td className="id">{artifact.id}</td>
             <td className="name">{artifact.name}</td>
-            <td>{artifact.type}</td>
+            <td>{artifact.date}</td>
             <td>{artifact.category}</td>
         </tr>
     )
