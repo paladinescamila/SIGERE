@@ -1,0 +1,46 @@
+/* el text decoration !!! */
+.categories-list{
+    width: 250px;
+    border: 0.1em solid #eee;
+    padding: 1em;
+    box-shadow: 0 0 10px 0.1px #ddd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+}
+
+.categories-list-title,
+.categories-list ul{
+    padding: 1em;
+}
+
+.categories-list p{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.categories-list > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-list img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.categories-list ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.categories-list li{
+    color: #fff;
+    font-size: 13px;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    width: fit-content;
+    margin: 1px;
+    cursor: pointer;
+}

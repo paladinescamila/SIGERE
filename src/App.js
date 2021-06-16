@@ -19,6 +19,7 @@ import requirementsData from "./data/requirementsData";
 import artifactsData from "./data/artifactsData";
 import AddRequirementWindow from './components/AddRequirementWindow.jsx';
 import AddArtifactWindow from './components/AddArtifactWindow.jsx';
+import CategoriesList from './components/CategoriesList.jsx';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
   
   return (
     <>
-    <ProjectsList/>
+    <CategoriesList/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
@@ -44,11 +45,11 @@ function App() {
 
       </Switch>
     </Router> */}
-      <div class="container">
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
