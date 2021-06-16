@@ -14,11 +14,14 @@ export default function ArtifactCard({artifact}) {
                 <p>Cateogoría</p>
                 <p>{artifact.category}</p>
             </div>
+            <div className="artifact-card-file">
+                <p>Archivo</p>
+                <a href={artifact.file} download>Descargar</a>
+            </div>
             <div className="artifact-card-buttons">
                 <button className="artifact-card-cancel">Cancelar</button>
                 <button className="artifact-card-delete">Eliminar</button>
                 <button className="artifact-card-save">Guardar</button>
-                <a href={artifact.file} download className="artifact-card-file">Descargar</a>
             </div>
         </div>
     )

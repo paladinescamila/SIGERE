@@ -33,6 +33,7 @@ function App() {
   
   return (
     <>
+    <ArtifactCard artifact={artifactsData[0]} />
     {/* <Router>
       <AssideAccount/>
       <Switch>
@@ -41,11 +42,11 @@ function App() {
 
       </Switch>
     </Router> */}
-      <div class="container">
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
