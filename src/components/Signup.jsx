@@ -1,6 +1,6 @@
+import React from 'react';
 import '../css/signup.css';
-import React from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import SigereLogo from '../img/logo.svg';
 
 export function Signup({loginOption}) {
 
@@ -9,23 +9,17 @@ export function Signup({loginOption}) {
     }
 
     return (
-        <form action="#" class="sign-up-form">
-            <h2 class="title">Regístrate</h2>
-            <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Usuario" />
+        <form className="signup-form">
+            <div className="signup-form-logo">
+                <img src={SigereLogo} alt="Sigere logo"></img>
             </div>
-            <div class="input-field">
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Correo electrónico" />
+            <input className="signup-form-user" type="email" placeholder="Correo electrónico"></input>
+            <input className="signup-form-pass" type="password" placeholder="Contraseña"></input>
+            <button className="signup-form-button">Crear una cuenta</button>
+            <div className="signup-form-to-signup">
+                <p>¿Ya tienes una cuenta?</p>
+                <p className="signup-form-signup" onClick={changeToLogin}>Inicia sesión</p>
             </div>
-            <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Contraseña" />
-            </div>
-            <input type="submit" class="btn" value="Crear" />
-            <p class="login-message">¿Ya tienes una cuenta?</p>
-            <div class="login-button" onClick={changeToLogin}>Inicia Sesión</div>
         </form>
     )
 }
