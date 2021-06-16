@@ -61,6 +61,11 @@
     margin-bottom: 2em;
 }
 
+.req-priority input{
+    padding: 0.5em;
+    text-align: end;
+}
+
 .req-buttons{
     display: flex;
     justify-content: space-between;

@@ -1,6 +1,4 @@
 header {
-    /* background-color: aqua; */
-    /*width: 90vw;*/
     display: flex;
     justify-content: space-between;
     padding: 0.5em;
@@ -8,7 +6,6 @@ header {
 }
 
 .header-menu{
-    /* background-color: bisque; */
     display: flex;
     justify-content: space-between;
 }
@@ -21,12 +18,10 @@ header {
 .header-search-profile{
     display: flex;
     justify-content: space-between;
-    /* background-color: cornflowerblue; */
 }
 
 .header-search{
     margin-right: 2em;
-    /* background-color: darkmagenta; */
     display: flex;
     justify-content: space-between;
 }
@@ -34,13 +29,13 @@ header {
 .header-search .search {
     border-radius: 1em;
     margin: 0 0.5em;
-    border: 1px solid  #ccc;
     padding: 0.5em 1em;
     outline: none;
+    background-color: #fff;
+    border: 0.15em solid #efefef;
 }
 
 .header-search img{
-    /* background-color: darkslateblue; */
     width: 1em;
     height: 1em;
     align-self: center;
@@ -50,7 +45,6 @@ header {
 }
 
 .header-profile{
-    /* background-color: coral; */
     border-radius: 50%;
     width: 2.5em;
     margin-right: 3em;

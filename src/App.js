@@ -32,9 +32,6 @@ function App() {
   return (
     <>
     {/* <Router>
-      <Asside/>
-    {/* <AccountSettings/> */}
-    {/* <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>

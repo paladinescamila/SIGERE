@@ -17,3 +17,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+input[type="text"], 
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea{
+    border: 0.15em solid #efefef;
+    outline: none;
+    background-color: #efefef;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus{
+    border: 0.15em solid #ccc;
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    border: 0.1em solid #eee;
+    background-color: #eee;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
