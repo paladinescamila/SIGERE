@@ -21,6 +21,9 @@ export default function RequirementsTable() {
             {
                 requirementsData.map((r) => <RequirementItem requirement={r} />)
             }
+            <tr className="add-req-button">
+                <td colSpan="4">Agregar requisito</td>
+            </tr>
         </table>
     )
 }

@@ -27,10 +27,26 @@
     background-color: #fafafa;
 }
 
-.req-table tr{
+.req-item{
     cursor: pointer;
 }
 
 .req-table tr:hover{
     background-color: #f0f0f0;
+}
+
+.req-table th{
+    background-color: #e5e5e5;
+}
+
+.add-req-button td{
+    font-weight: bold;
+    background-color: #fefefe;
+    border: none;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.add-req-button td:hover{
+    background-color: #fafafa;
 }

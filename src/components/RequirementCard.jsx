@@ -31,9 +31,9 @@ export default function RequirementCard({requirement}) {
                 <div className="req-type">
                     <p>Tipo:</p>
                     <select>
-                        <option selected={requirement.state === "Funcional"}>Funcional</option>
-                        <option selected={requirement.state === "No funcional"}>No funcional</option>
-                        <option selected={requirement.state === "Restricción"}>Restricción</option>
+                        <option selected={requirement.type === "Funcional"}>Funcional</option>
+                        <option selected={requirement.type === "No funcional"}>No funcional</option>
+                        <option selected={requirement.type === "Restricción"}>Restricción</option>
                     </select>
                 </div>
                 <div className="req-priority">

@@ -15,7 +15,7 @@ const requirements = [
         description: "El sistema debe permitir que un usuario pueda crear o modificar un requisito.", 
         state: "Procesado",
         category: "Requisitos", 
-        type: "Funcional", 
+        type: "Restricción", 
         priority: 2,
         version: "3",
         created: "13/06/2021",

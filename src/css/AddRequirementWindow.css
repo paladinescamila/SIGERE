@@ -1,0 +1,110 @@
+.add-req-win{
+    border: 0.1em solid #ddd;
+    border-radius: 0.5em;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.add-req-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-req-fields > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.1em;
+}
+
+.add-req-fields > div:nth-of-type(3), 
+.add-req-fields > div:nth-of-type(4), 
+.add-req-fields > div:nth-of-type(5), 
+.add-req-fields > div:nth-of-type(6), 
+.add-req-fields > div:nth-of-type(7), 
+.add-req-fields > div:nth-of-type(8), 
+.add-req-fields > div:nth-of-type(9){
+    height: 2.5em;
+}
+
+.add-req-win > input, 
+.add-req-win > textarea, 
+.add-req-win > select{
+    background-color: #fafafa;
+    border: 0.1em solid #ccc;
+    padding: 1em;
+    border-radius: 0.2em;
+    outline: none;
+    width: 50%;
+    height: 100%;
+}
+
+.add-req-win > select{
+    padding: 0.5em;
+    background-color: yellow;
+}
+
+.add-req-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    padding: 0 0 1.5em 0;
+    align-self: center;
+}
+
+.add-req-description textarea{
+    resize: none;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.add-req-priority input{
+    padding: 0.5em;
+    text-align: end;
+}
+
+.add-req-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0 0 0;
+}
+
+.add-req-buttons button{
+    border: none;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    font-weight: 600;
+    width: 35%;
+}
+
+.add-req-cancel{
+    color: #333;
+    background-color: transparent;
+}
+
+.add-req-delete{
+    color: #ff3333;
+    background-color: transparent;
+}
+
+.add-req-save{
+    color: #fff;
+    background-color: #192353;
+}
+
+.add-req-cancel:hover{
+    background-color: #ddd;
+}
+
+.add-req-delete:hover{
+    background-color: #ffbfbf;
+}
+
+.add-req-save:hover{
+    background-color: #2c3d94;
+}

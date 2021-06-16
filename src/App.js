@@ -17,6 +17,7 @@ import Projects from './components/Projects';
 import ArtifactCard from './components/ArtifactCard.jsx';
 import requirementsData from "./data/requirementsData";
 import artifactsData from "./data/artifactsData";
+import AddRequirementWindow from './components/AddRequirementWindow.jsx';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
   
   return (
     <>
-    <ArtifactCard artifact={artifactsData[0]} />
+    <AddRequirementWindow/> 
     {/* <Router>
       <AssideAccount/>
       <Switch>
