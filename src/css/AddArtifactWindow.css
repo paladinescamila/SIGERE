@@ -1,0 +1,70 @@
+.add-art-win{
+    border: 0.1em solid #ddd;
+    border-radius: 0.5em;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.add-art-category,
+.add-art-file{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-art-id{
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    align-self: center;
+}
+
+.add-art-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 0 0;
+}
+
+.add-art-cancel, 
+.add-art-save{
+    width: 35%;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    font-weight: 500;
+}
+
+.add-art-cancel{
+    color: #333;
+    background-color: transparent;
+}
+
+.add-art-cancel:hover{
+    background-color: #ddd;
+}
+
+.add-art-save{
+    background-color: var(--blue-2);
+    color: #fff;
+}
+
+.add-art-save:hover{
+    background-color: var(--blue-1);
+}
+
+.add-art-file input{
+    display: inline-block;
+    width: 50%;
+}
+
+.add-art-id, 
+.add-art-name,
+.add-art-date, 
+.add-art-category{
+    margin: 0 0 2em 0;
+}

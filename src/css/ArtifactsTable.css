@@ -35,10 +35,17 @@
     background-color: #f0f0f0;
 }
 
-.add-art-button{
-    background-color: violet;
+.art-table th{
+    background-color: #e5e5e5;
 }
 
-.add-art-button:hover{
-    background-color: blue;
+.add-art-button td{
+    font-weight: bold;
+    background-color: #fefefe;
+    border: none;
+    cursor: pointer;
+}
+
+.add-art-button td:hover{
+    background-color: #fafafa;
 }

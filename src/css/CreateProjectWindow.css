@@ -50,7 +50,7 @@
 }
 .create-button{
     color: #fff;
-    background-color: #192353;
+    background-color: var(--blue-2);
 }
 
 .cancel-button:hover{
@@ -58,5 +58,5 @@
 }
 
 .create-button:hover{
-    background-color: #2c3d94;
+    background-color: var(--blue-1);
 }

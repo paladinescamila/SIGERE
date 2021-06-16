@@ -16,7 +16,7 @@ export default function ArtifactsTable() {
                 artifactsData.map((a) => <ArtifactItem artifact={a}/>)
             }
             <tr className="add-art-button">
-                <th colSpan={4}>Agregar artefacto</th>
+                <td colSpan={4}>Agregar artefacto</td>
             </tr>
         </table>
     )

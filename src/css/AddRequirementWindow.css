@@ -87,24 +87,16 @@
     background-color: transparent;
 }
 
-.add-req-delete{
-    color: #ff3333;
-    background-color: transparent;
-}
-
 .add-req-save{
     color: #fff;
-    background-color: #192353;
+    background-color: var(--blue-2);
 }
 
 .add-req-cancel:hover{
     background-color: #ddd;
 }
 
-.add-req-delete:hover{
-    background-color: #ffbfbf;
-}
-
 .add-req-save:hover{
-    background-color: #2c3d94;
+    background-color: var(--blue-1);
+    ;
 }
