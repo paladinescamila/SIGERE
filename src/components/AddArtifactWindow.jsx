@@ -1,7 +1,8 @@
 import React from 'react';
 import '../css/AddArtifactWindow.css';
+import categoriesData from '../data/categories';
 
-export default function AddArtifactWindow() {
+export default function AddArtifactWindow({projectId}) {
     return (
         <div className="add-art-win win-card">
             <p className="add-art-id card-title">Agregar artefacto</p>
@@ -9,7 +10,10 @@ export default function AddArtifactWindow() {
             <div className="add-art-category">
                 <p>Categoría:</p>
                 <select>
-                    <option>Categoría 1</option>
+                    {
+                        categoriesData[projectId].map((c) => 
+                            <option>{c.text}</option>)
+                    }
                 </select>
             </div>
             <div className="add-art-file">

@@ -1,7 +1,8 @@
 import React from 'react';
 import '../css/AddRequirementWindow.css';
+import categoriesData from '../data/categories';
 
-export default function AddRequirementWindow() {
+export default function AddRequirementWindow({projectId}) {
     return (
         <div className="add-req-win win-card">
             <div className="add-req-fields">
@@ -14,8 +15,11 @@ export default function AddRequirementWindow() {
                 <div className="add-req-category">
                     <p>Categoría:</p>
                     <select>
-                        <option>Categoría</option>
-                    </select>
+                    {
+                        categoriesData[projectId].map((c) => 
+                            <option>{c.text}</option>)
+                    }
+                </select>
                 </div>
                 <div className="add-req-type">
                     <p>Tipo:</p>

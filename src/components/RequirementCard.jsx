@@ -1,8 +1,14 @@
 import React from 'react';
 import "../css/RequirementCard.css";
+import requirementsData from '../data/requirements';
+import categoriesData from '../data/categories';
 import standardDate from '../functions/dateConverter';
 
 export default function RequirementCard({requirement}) {
+
+    const requirementsMap = Object.entries(requirementsData)
+    const projectId = requirementsMap.find((p) => p[1].find((r) => r.id === requirement.id).id === requirement.id)[0];
+
     return (
         <div className="requirementCard win-card">
             <div className="requirementCardFields">
@@ -25,7 +31,10 @@ export default function RequirementCard({requirement}) {
                 <div className="req-category">
                     <p>Categoría:</p>
                     <select>
-                        <option>Categoría</option>
+                        {
+                            categoriesData[projectId].map((c) => 
+                                <option selected={requirement.category === c.text}>{c.text}</option>)
+                        }
                     </select>
                 </div>
                 <div className="req-type">
