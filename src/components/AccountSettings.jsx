@@ -1,20 +1,21 @@
 import React from 'react';
 import '../css/AccountSettings.css';
+import standardDate from '../functions/dateConverter.js';
 
-export default function AccountSettings() {
+export default function AccountSettings({user}) {
     return (
         <div className="account-settings">
             <div className="name-settings">
                 <p>Nombre</p>
-                <input className="input" type="text"></input>
+                <input className="input" type="text" value={user.name}></input>
             </div>
             <div className="user-settings">
                 <p>Usuario</p>
-                <input className="input" type="text"></input>
+                <input className="input" type="text" value={user.username}></input>
             </div>
             <div className="email-settings">
                 <p>Correo electrónico</p>
-                <input className="input" type="email"></input>
+                <input className="input" type="email" value={user.email}></input>
             </div>
             <div className="old-pass-settings">
                 <p>Contraseña anterior</p>

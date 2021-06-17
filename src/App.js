@@ -2,12 +2,13 @@ import React, {Fragment, useState, useRef, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './css/App.css';
 
-// DATOS
-import requirementsData from "./data/requirementsData";
-import artifactsData from "./data/artifactsData";
+// DATA
+import requirementsData from './data/requirementsData';
+import artifactsData from './data/artifactsData';
 import projectsData from './data/projectsData.js';
+import usersData from './data/usersData.js';
 
-// COMPONENTES
+// COMPONENTS
 import Login from './components/Login';
 import Signup from './components/Signup';
 import AccountSettings from './components/AccountSettings';
@@ -56,7 +57,7 @@ function App() {
     <ProjectsList/>
     <RequirementCard requirement={requirementsData[0]}/>
     <RequirementsTable/> */}
-    {/* <ProjectSettings/> */}
+    <ProjectSettings project={projectsData[0]}/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
@@ -65,11 +66,11 @@ function App() {
 
       </Switch>
     </Router> */}
-      <div class="container">
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
