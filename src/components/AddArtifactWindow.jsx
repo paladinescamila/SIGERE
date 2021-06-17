@@ -7,15 +7,6 @@ export default function AddArtifactWindow({projectId}) {
         <div className="add-art-win win-card">
             <p className="add-art-id card-title">Agregar artefacto</p>
             <input className="add-art-name input" type="text" placeholder="Escriba el nombre..."></input>
-            <div className="add-art-category">
-                <p>Categoría:</p>
-                <select>
-                    {
-                        categoriesData[projectId].map((c) => 
-                            <option>{c.text}</option>)
-                    }
-                </select>
-            </div>
             <div className="add-art-file">
                 <p>Archivo:</p>
                 <input type="file"></input>
