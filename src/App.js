@@ -28,6 +28,7 @@ import ArtifactCard from './components/ArtifactCard';
 import AddArtifactWindow from './components/AddArtifactWindow';
 import CategoriesList from './components/CategoriesList';
 import AddCategoryWindow from './components/AddCategoryWindow';
+import DiagramsTable from './components/DiagramsTable';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
   
   return (
     <>
-    <AccountSettings email={'pepito@sigere.com'}/>
+    {/* <AccountSettings email={'pepito@sigere.com'}/>
     <AddArtifactWindow projectId={'Project-001'}/>
     <AddRequirementWindow projectId={'Project-001'}/>
     <ArtifactCard artifact={artifactsData['Project-001'][0]}/>
@@ -57,8 +58,9 @@ function App() {
     <ProjectsList/>
     <RequirementCard requirement={requirementsData['Project-001'][2]}/>
     <RequirementsTable projectId={'Project-001'}/>
-    <ProjectSettings projectId={'Project-001'}/>
-    <Router>
+    <ProjectSettings projectId={'Project-001'}/> */}
+    <DiagramsTable projectId={'Project-001'}/>
+    {/* <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>

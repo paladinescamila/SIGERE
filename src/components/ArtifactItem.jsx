@@ -8,7 +8,6 @@ export default function ArtifactItem({artifact}) {
             <td className="id">{artifact.id}</td>
             <td className="name">{artifact.name}</td>
             <td>{standardDate(artifact.date)}</td>
-            <td>{artifact.category}</td>
         </tr>
     )
 }

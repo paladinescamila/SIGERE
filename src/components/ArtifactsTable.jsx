@@ -10,13 +10,12 @@ export default function ArtifactsTable({projectId}) {
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Fecha de subida</th>
-                <th>Categoría</th>
             </tr>
             {
                 artifactsData[projectId].map((a) => <ArtifactItem artifact={a}/>)
             }
             <tr className="add-art-button">
-                <td colSpan={4}>Agregar artefacto</td>
+                <td colSpan={3}>Agregar artefacto</td>
             </tr>
         </table>
     )
