@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/AccountSettings.css';
-import standardDate from '../functions/dateConverter.js';
 
 export default function AccountSettings({user}) {
     return (

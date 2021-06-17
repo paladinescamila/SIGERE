@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/RequirementCard.css";
-import requirements from '../data/requirementsData';
+import standardDate from '../functions/dateConverter';
 
 export default function RequirementCard({requirement}) {
     return (
@@ -46,11 +46,11 @@ export default function RequirementCard({requirement}) {
                 </div>
                 <div className="req-created">
                     <p>Fecha de creación:</p>
-                    <p>{requirement.created}</p>
+                    <p>{standardDate(requirement.created)}</p>
                 </div>
                 <div className="req-modified">
                     <p>Última modificación:</p>
-                    <p>{requirement.modified}</p>
+                    <p>{standardDate(requirement.modified)}</p>
                 </div>
             </div>
             <div className="card-3-buttons">

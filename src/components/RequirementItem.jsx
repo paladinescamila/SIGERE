@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/RequirementsItem.css';
-import editButton  from '../img/edit.svg';
 
 export default function RequirementItem({requirement}) {
 

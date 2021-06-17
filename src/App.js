@@ -44,7 +44,7 @@ function App() {
   
   return (
     <>
-    {/* <AccountSettings/>
+    <AccountSettings user={usersData[0]}/>
     <AddArtifactWindow/>
     <AddRequirementWindow/>
     <ArtifactCard artifact={artifactsData[0]}/>
@@ -56,7 +56,7 @@ function App() {
     <IntroductionSection/>
     <ProjectsList/>
     <RequirementCard requirement={requirementsData[0]}/>
-    <RequirementsTable/> */}
+    <RequirementsTable/>
     <ProjectSettings project={projectsData[0]}/>
     {/* <Router>
       <AssideAccount/>

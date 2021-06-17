@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/ArtifactCard.css";
+import standardDate from '../functions/dateConverter';
 
 export default function ArtifactCard({artifact}) {
     return (
@@ -8,7 +9,7 @@ export default function ArtifactCard({artifact}) {
             <input className="artifact-card-name input" type="text" value={artifact.name}></input>
             <div className="artifact-card-date">
                 <p>Fecha de subida:</p>
-                <p>{artifact.date}</p>
+                <p>{standardDate(artifact.date)}</p>
             </div>
             <div className="artifact-card-category">
                 <p>Cateogoría:</p>
