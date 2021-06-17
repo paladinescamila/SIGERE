@@ -47,17 +47,17 @@ function App() {
     <AccountSettings email={'pepito@sigere.com'}/>
     <AddArtifactWindow/>
     <AddRequirementWindow/>
-    <ArtifactCard artifact={artifactsData[projectsData[0].id][0]}/>
-    <ArtifactsTable projectId={projectsData[0].id}/>
+    <ArtifactCard artifact={artifactsData['Project-001'][0]}/>
+    <ArtifactsTable projectId={'Project-001'}/>
     <CategoriesList/>
     <CategoryCard/>
     <CreateProjectWindow/>
     <Header/>
     <IntroductionSection/>
     <ProjectsList/>
-    <RequirementCard requirement={requirementsData[projectsData[0].id][0]}/>
-    <RequirementsTable projectId={projectsData[0].id}/>
-    <ProjectSettings project={projectsData[0]}/>
+    <RequirementCard requirement={requirementsData['Project-001'][0]}/>
+    <RequirementsTable projectId={'Project-001'}/>
+    {/* <ProjectSettings projectId={'Project-001'}/> */}
     {/* <Router>
       <AssideAccount/>
       <Switch>

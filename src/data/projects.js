@@ -1,6 +1,6 @@
-const projects = [
+const projects = {
+    'Project-001':
     {
-        id: "Project-001",
         name: "Sigere", 
         description: "Este proyecto va a construir una página web.",
         version: [5, 1],
@@ -8,8 +8,7 @@ const projects = [
         progress: 76,
         admin: "Lorem ipsum"
     },
-    {
-        id: "Project-002",
+    'Project-002':{
         name: "Otro proyecto", 
         description: "Este proyecto va a construir una página web.",
         version: [5, 1],
@@ -17,8 +16,7 @@ const projects = [
         progress: 73,
         admin: "Pepito Pérez"
     },
-    {
-        id: "Project-003",
+    'Project-003': {
         name: "Un tercer proyecto", 
         description: "Este proyecto va a construir una página web.",
         version: [5, 1],
@@ -26,8 +24,7 @@ const projects = [
         progress: 57,
         admin: "No"
     },
-    {
-        id: "Project-004",
+    'Project-004': {
         name: "Un tercer proyecto", 
         description: "Este proyecto va a construir una página web.",
         version: [5, 1],
@@ -35,8 +32,7 @@ const projects = [
         progress: 57,
         admin: "No"
     },
-    {
-        id: "Project-005",
+    'Project-005': {
         name: "Un tercer proyecto", 
         description: "Este proyecto va a construir una página web.",
         version: [5, 1],
@@ -44,6 +40,6 @@ const projects = [
         progress: 57,
         admin: "No"
     },
-];
+};
 
 export default projects;
