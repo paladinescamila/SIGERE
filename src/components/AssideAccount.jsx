@@ -36,7 +36,7 @@ function AssideAccount() {
                         )
                     })}
                     <li className="navbar-toggle navbar-close">
-                        <input type="submit" value="Cerrar Sesión" class="btn solid" />
+                        <input type="submit" value="Cerrar Sesión" class="solid-button" />
                     </li>
                 </ul>
             </nav>

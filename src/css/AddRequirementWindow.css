@@ -28,11 +28,6 @@
 .add-req-win > input, 
 .add-req-win > textarea, 
 .add-req-win > select{
-    background-color: #fafafa;
-    border: 0.1em solid #ccc;
-    padding: 1em;
-    border-radius: 0.2em;
-    outline: none;
     width: 50%;
     height: 100%;
 }

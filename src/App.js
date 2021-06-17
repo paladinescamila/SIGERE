@@ -38,7 +38,7 @@ function App() {
   
   return (
     <>
-    <AccountSettings/>
+    {/* <AccountSettings/>
     <AddArtifactWindow/>
     <AddRequirementWindow/>
     <ArtifactCard artifact={artifactsData[0]}/>
@@ -50,20 +50,20 @@ function App() {
     <IntroductionSection/>
     <ProjectsList/>
     <RequirementCard requirement={requirementsData[0]}/>
-    <RequirementsTable/>
-    {/* <Router>
+    <RequirementsTable/> */}
+    <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
 
       </Switch>
-    </Router> */}
-      <div class="container">
+    </Router>
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

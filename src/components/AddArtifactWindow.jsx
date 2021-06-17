@@ -7,7 +7,7 @@ export default function AddArtifactWindow() {
             <p className="add-art-id card-title">Agregar artefacto</p>
             <input className="add-art-name input" type="text" placeholder="Escriba el nombre..."></input>
             <div className="add-art-category">
-                <p>Cateogoría:</p>
+                <p>Categoría:</p>
                 <select>
                     <option>Categoría 1</option>
                 </select>
