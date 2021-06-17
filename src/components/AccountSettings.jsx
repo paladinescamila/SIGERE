@@ -1,20 +1,21 @@
 import React from 'react';
 import '../css/AccountSettings.css';
+import usersData from '../data/users';
 
-export default function AccountSettings({user}) {
+export default function AccountSettings({email}) {
     return (
         <div className="account-settings">
             <div className="name-settings">
                 <p>Nombre</p>
-                <input className="input" type="text" value={user.name}></input>
+                <input className="input" type="text" value={usersData[email].name}></input>
             </div>
             <div className="user-settings">
                 <p>Usuario</p>
-                <input className="input" type="text" value={user.username}></input>
+                <input className="input" type="text" value={usersData[email].username}></input>
             </div>
             <div className="email-settings">
                 <p>Correo electrónico</p>
-                <input className="input" type="email" value={user.email}></input>
+                <input className="input" type="email" value={email}></input>
             </div>
             <div className="old-pass-settings">
                 <p>Contraseña anterior</p>

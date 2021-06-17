@@ -1,0 +1,61 @@
+const requirements = {
+    'Project-001': [
+        {
+            id: "R001", 
+            description: "El sistema debe permitir la comunicación entre los colaboradores mediante comentarios.", 
+            state: "Sin procesar",
+            category: "Comunicación", 
+            type: "Funcional", 
+            priority: 7,
+            version: 5,
+            created: [13, 6, 2021],
+            modified: [15, 6, 2021],
+        },
+        {
+            id: "R002", 
+            description: "Ejemplo de descripción para ver si funciona el índice.", 
+            state: "Procesado",
+            category: "Requisitos", 
+            type: "Restricción", 
+            priority: 2,
+            version: 3,
+            created: [13, 6, 2021],
+            modified: [15, 6, 2021],
+        },
+        {
+            id: "R003", 
+            description: "El sistema debe permitir que un usuario pueda crear o modificar un requisito.", 
+            state: "Validado",
+            category: "Requisitos", 
+            type: "Funcional", 
+            priority: 2,
+            version: 3,
+            created: [13, 6, 2021],
+            modified: [15, 6, 2021],
+        },
+        {
+            id: "R004", 
+            description: "El sistema debe permitir que un usuario pueda crear o modificar un requisito.", 
+            state: "Negociado",
+            category: "Requisitos", 
+            type: "Funcional", 
+            priority: 2,
+            version: 3,
+            created: [13, 6, 2021],
+            modified: [15, 6, 2021],
+        },
+        {
+            id: "R005", 
+            description: "El sistema debe permitir que un usuario pueda crear o modificar un requisito.", 
+            state: "Terminado",
+            category: "Requisitos", 
+            type: "Funcional", 
+            priority: 2,
+            version: 3,
+            created: [13, 6, 2021],
+            modified: [15, 6, 2021],
+        },
+    ]
+};
+
+export default requirements;

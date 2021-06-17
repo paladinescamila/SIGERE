@@ -1,9 +1,9 @@
 import '../css/RequirementsTable.css';
-import requirementsData from "../data/requirementsData.js";
+import requirementsData from "../data/requirements.js";
 import RequirementItem from './RequirementItem.jsx';
 import React from 'react';
 
-export default function RequirementsTable() {
+export default function RequirementsTable({projectId}) {
 
     return (
         <table className="req-table">
@@ -19,7 +19,7 @@ export default function RequirementsTable() {
                 <th>Última Modificación</th> */}
             </tr>
             {
-                requirementsData.map((r) => <RequirementItem requirement={r} />)
+                requirementsData[projectId].map((r) => <RequirementItem requirement={r} />)
             }
             <tr className="add-req-button">
                 <td colSpan="4">Agregar requisito</td>

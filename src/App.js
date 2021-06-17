@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './css/App.css';
 
 // DATA
-import requirementsData from './data/requirementsData';
-import artifactsData from './data/artifactsData';
-import projectsData from './data/projectsData.js';
-import usersData from './data/usersData.js';
+import requirementsData from './data/requirements';
+import artifactsData from './data/artifacts';
+import projectsData from './data/projects.js';
+import usersData from './data/users.js';
 
 // COMPONENTS
 import Login from './components/Login';
@@ -44,19 +44,19 @@ function App() {
   
   return (
     <>
-    <AccountSettings user={usersData[0]}/>
+    <AccountSettings email={'pepito@sigere.com'}/>
     <AddArtifactWindow/>
     <AddRequirementWindow/>
-    <ArtifactCard artifact={artifactsData[0]}/>
-    <ArtifactsTable/>
+    <ArtifactCard artifact={artifactsData[projectsData[0].id][0]}/>
+    <ArtifactsTable projectId={projectsData[0].id}/>
     <CategoriesList/>
     <CategoryCard/>
     <CreateProjectWindow/>
     <Header/>
     <IntroductionSection/>
     <ProjectsList/>
-    <RequirementCard requirement={requirementsData[0]}/>
-    <RequirementsTable/>
+    <RequirementCard requirement={requirementsData[projectsData[0].id][0]}/>
+    <RequirementsTable projectId={projectsData[0].id}/>
     <ProjectSettings project={projectsData[0]}/>
     {/* <Router>
       <AssideAccount/>

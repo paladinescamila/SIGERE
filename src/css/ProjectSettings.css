@@ -39,7 +39,22 @@
     padding: 1em;
 }
 
+.project-settings .project-progress-bar{
+    width: 80%;
+}
+
 
 .project-members{
     grid-area: members;
 }
+
+.project-members p{
+    margin-bottom: 1em;
+}
+
+.project-members ul{
+    list-style: none;
+    display: grid;
+    grid-gap: 0.5em;
+    color: #555;
+}   

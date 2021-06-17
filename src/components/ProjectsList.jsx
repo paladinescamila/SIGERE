@@ -1,5 +1,5 @@
 import React from 'react';
-import projectsData from "../data/projectsData.js";
+import projectsData from "../data/projects.js";
 import ProjectItem from './ProjectItem.jsx';
 import '../css/ProjectsList.css';
 

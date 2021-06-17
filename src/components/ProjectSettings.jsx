@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/ProjectSettings.css';
-import usersData from '../data/usersData.js';
+import collaboratorsData from '../data/collaborators';
 import standardDate from '../functions/dateConverter';
 
 export default function ProjectSettings({project}) {
@@ -18,15 +18,17 @@ export default function ProjectSettings({project}) {
                 </div>
                 <div className="project-settings-field">
                     <p>Versión</p>
-                    <p>{project.version[0]}.{project.version[1]}.{project.version[2]} ({standardDate(project.lastUpdate)})</p>
+                    <p>{project.version[0]}.{project.version[1]} ({standardDate(project.lastUpdate)})</p>
                 </div>
                 <div className="project-settings-field">
                     <p>Progreso</p>
-                    <div className="progress">
-                    <div className="project-progress-bar">
-                        <div style={{width: project.progress + "%"}}className="project-progress"></div>
-                    </div>
-                    <p className="progress-number">{project.progress}%</p>
+                    <div>
+                        <div className="progress">
+                        <div className="project-progress-bar">
+                            <div style={{width: project.progress + "%"}}className="project-progress"></div>
+                        </div>
+                        <p className="progress-number">{project.progress}%</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,7 +36,7 @@ export default function ProjectSettings({project}) {
                 <p>Miembros</p>
                 <ul>
                     {
-                        usersData.map((u) => <li>{u.name} ({u.email})</li>)
+                        collaboratorsData[project.id].map((u) => <li>{u.email} ({u.type})</li>)
                     }
                 </ul>
             </div>
