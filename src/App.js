@@ -58,14 +58,17 @@ function App() {
     <RequirementCard requirement={requirementsData['Project-001'][2]}/>
     <RequirementsTable projectId={'Project-001'}/>
     <ProjectSettings projectId={'Project-001'}/>
-    {/* <Router>
+    <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
+        {/* <Route path='/intro' component={}/>
+        <Route path='/general' component={}/>
+        <Route path='/files' component={}/> */}
 
       </Switch>
-    </Router> */}
+    </Router>
       {/* <div class="container">
         <div class="login-or-signup">
           {display}
