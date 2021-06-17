@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/login.css';
 import SigereLogo from '../img/logo.svg';
 
-export function Login({signupOption}) {
+export default function Login({signupOption}) {
 
     const changeToSignup = () => {
         signupOption();

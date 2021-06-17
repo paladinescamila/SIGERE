@@ -4,7 +4,7 @@ import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../css/Asside.css";
 import {SidebarData} from './AssideData';
-import {Header} from './Header';
+import Header from './Header';
 function Asside() {
     const [sidebar, setSidebar] = useState(false);
 

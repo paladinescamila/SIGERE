@@ -1,4 +1,3 @@
-// import '../css/Header.css';
 import '../css/Header.css';
 import notificationsLogo from '../img/notifications.svg';
 import messagesLogo from '../img/messages.svg';
@@ -7,7 +6,7 @@ import profilePhoto from '../img/profile.jpg';
 import searchButton from '../img/search.svg';
 import React from 'react'
 
-export function Header() {
+export default function Header() {
 
     return (
         <header>
