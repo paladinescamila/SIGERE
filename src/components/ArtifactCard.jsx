@@ -18,7 +18,7 @@ export default function ArtifactCard({artifact}) {
                 <p>Archivo:</p>
                 <a href={artifact.file} download>Descargar</a>
             </div>
-            <div className="artifact-card-buttons">
+            <div className="card-3-buttons">
                 <button className="artifact-card-cancel empty-button">Cancelar</button>
                 <button className="artifact-card-delete empty-button">Eliminar</button>
                 <button className="artifact-card-save solid-button">Guardar</button>

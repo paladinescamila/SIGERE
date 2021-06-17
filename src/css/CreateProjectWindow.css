@@ -19,9 +19,3 @@
     width: 100%;
     margin-bottom: 2em;
 }
-
-.buttons{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}

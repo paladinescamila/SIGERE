@@ -7,10 +7,16 @@
 .account-settings{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr, 4);
-    grid-template-areas: "name name" "user email" "old old" "new1 new2";
+    grid-template-rows: repeat(4, 1fr) 0.5fr 0.6fr;
+    grid-template-areas: 
+                        "name name" 
+                        "user email" 
+                        "old old" 
+                        "new1 new2" 
+                        "empty empty" 
+                        "button button";
     grid-gap: 0.5em;
-    /* width: 300px; */
+    width: 500px;
 }
 
 .name-settings{
@@ -35,6 +41,15 @@
 
 .new-pass-settings-2{
     grid-area: new2;
+}
+
+.account-settings .empty{
+    height: 20px;
+    grid-area: empty;
+}
+
+.account-settings .settings-save{
+    grid-area: button;
 }
 
 .account-settings p{

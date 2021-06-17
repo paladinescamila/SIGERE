@@ -52,12 +52,6 @@
     margin-bottom: 2em;
 }
 
-.req-buttons{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 0 0 0;
-}
-
 .req-delete{
     color: #ff3333;
     background-color: transparent;

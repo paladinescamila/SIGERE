@@ -28,6 +28,8 @@ export default function AccountSettings() {
                 <p>Repita la contraseña</p>
                 <input className="input" type="password"></input>
             </div>
+            <div className="empty"></div>
+            <button className="solid-button settings-save">Guardar</button>
         </div>
     )
 }

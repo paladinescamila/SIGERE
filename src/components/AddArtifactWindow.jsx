@@ -16,7 +16,7 @@ export default function AddArtifactWindow() {
                 <p>Archivo:</p>
                 <input type="file"></input>
             </div>
-            <div className="add-art-buttons">
+            <div className="card-2-buttons">
                 <button className="add-art-cancel empty-button">Cancelar</button>
                 <button className="add-art-save solid-button">Guardar</button>
             </div>

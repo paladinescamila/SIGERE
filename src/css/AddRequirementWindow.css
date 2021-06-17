@@ -1,5 +1,5 @@
 .add-req-win{
-    width: 500px;
+    width: 400px;
 }
 
 .add-req-fields{
@@ -56,10 +56,4 @@
 .add-req-priority input{
     padding: 0.5em;
     text-align: end;
-}
-
-.add-req-buttons{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 0 0 0;
 }

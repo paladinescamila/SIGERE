@@ -53,7 +53,7 @@ export default function RequirementCard({requirement}) {
                     <p>{requirement.modified}</p>
                 </div>
             </div>
-            <div className="req-buttons">
+            <div className="card-3-buttons">
                 <button className="req-cancel empty-button">Cancelar</button>
                 <button className="req-delete empty-button">Eliminar</button>
                 <button className="req-save solid-button">Guardar</button>

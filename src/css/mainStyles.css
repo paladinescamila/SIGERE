@@ -77,6 +77,20 @@
     padding: 2em;
 }
 
+.card-2-buttons{
+    padding: 2em 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+}
+
+.card-3-buttons{
+    padding: 2em 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
 select{
     border: 0.1em solid #eee;
     background-color: #eee;

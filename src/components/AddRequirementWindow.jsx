@@ -30,7 +30,7 @@ export default function AddRequirementWindow() {
                     <input className="input" type="number" placeholder="Inserte un número..." ></input>
                 </div>
             </div>
-            <div className="add-req-buttons">
+            <div className="card-2-buttons">
                 <button className="add-req-cancel empty-button">Cancelar</button>
                 <button className="add-req-save solid-button">Agregar</button>
             </div>

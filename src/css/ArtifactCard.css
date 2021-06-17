@@ -13,13 +13,6 @@
     justify-content: space-between;
 }
 
-.artifact-card-buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em 0 0 0;
-}
-
 .artifact-card-delete{
     color: #ff3333;
     background-color: transparent;

@@ -13,7 +13,7 @@ export default function AddCategoryWindow() {
                 <p>Color:</p>
                 <input type="color"></input>
             </div>
-            <div className="category-card-buttons">
+            <div className="card-2-buttons">
                 <button className="empty-button">Cancelar</button>
                 <button className="solid-button">Guardar</button>
             </div>
