@@ -10,6 +10,7 @@
 .add-art-file{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .add-art-file input{

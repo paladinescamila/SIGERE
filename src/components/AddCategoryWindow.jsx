@@ -3,13 +3,13 @@ import '../css/AddCategoryWindow.css';
 
 export default function AddCategoryWindow() {
     return (
-        <div className="category-card win-card">
-            <p className="category-card-title card-title">Agregar categoría</p>
-            <div className="category-card-name">
+        <div className="add-category win-card">
+            <p className="add-category-title card-title">Agregar categoría</p>
+            <div className="add-category-name">
                 <p>Nombre:</p>
                 <input className="input" type="text"></input>
             </div>
-            <div className="category-card-color">
+            <div className="add-category-color">
                 <p>Color:</p>
                 <input type="color"></input>
             </div>

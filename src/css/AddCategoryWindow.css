@@ -1,19 +1,27 @@
-.category-card{
+.add-category{
     width: 400px;
 }
 
-.category-card-title{
+.add-category-title{
     font-weight: bold;
 }
 
-.category-card-name, 
-.category-card-color{
+.add-category-name, 
+.add-category-color{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.category-card-title, 
-.category-card-name,
-.category-card-color{
+.add-category-title, 
+.add-category-name,
+.add-category-color{
     margin: 0 0 1em 0;
+}
+
+.add-category-color input{
+    -webkit-appearance: none;
+	border: none;
+    width: 30%;
+    height: 35px;
 }
