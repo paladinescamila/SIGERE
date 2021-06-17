@@ -14,30 +14,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-input[type="text"], 
-input[type="number"],
-input[type="email"],
-input[type="password"],
-textarea{
-    border: 0.15em solid #efefef;
     outline: none;
-    background-color: #efefef;
-    padding: 1em;
-    border-radius: 0.5em;
 }
 
-input[type="text"]:focus, 
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus{
+.solid-button{
+    background-color: var(--blue-1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    font-weight: 500;
+    border-radius: 0.25em;
+}
+
+.solid-button:hover{
+    background-color: var(--blue-3);
+}
+
+.empty-button{
+    background-color: #fff;
+    border: none;
+    color: #222;
+    cursor: pointer;
+    padding: 0.5em;
+    font-weight: 500;
+    border-radius: 0.25em;
+}
+
+.empty-button:hover{
+    background-color: #ededed;
+}
+
+.input, .textarea{
+    background-color: #efefef;
+    border: 0.15em solid #efefef;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+.input:focus, .textarea:focus{
     border: 0.15em solid #ccc;
 }
 
-textarea{
+.textarea{
+    padding: 1em;
     resize: none;
+}
+
+.card-title{
+    font-size: 1.5em;
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+}
+
+.win-card{
+    border: 0.1em solid #ddd;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
 }
 
 select{

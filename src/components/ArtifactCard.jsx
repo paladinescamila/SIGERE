@@ -3,25 +3,25 @@ import "../css/ArtifactCard.css";
 
 export default function ArtifactCard({artifact}) {
     return (
-        <div className="artifact-card">
-            <p className="artifact-card-id">{artifact.id}</p>
-            <input className="artifact-card-name" type="text" value={artifact.name}></input>
+        <div className="artifact-card win-card">
+            <p className="artifact-card-id card-title">{artifact.id}</p>
+            <input className="artifact-card-name input" type="text" value={artifact.name}></input>
             <div className="artifact-card-date">
                 <p>Fecha de subida:</p>
                 <p>{artifact.date}</p>
             </div>
             <div className="artifact-card-category">
-                <p>Cateogoría</p>
+                <p>Cateogoría:</p>
                 <p>{artifact.category}</p>
             </div>
             <div className="artifact-card-file">
-                <p>Archivo</p>
+                <p>Archivo:</p>
                 <a href={artifact.file} download>Descargar</a>
             </div>
             <div className="artifact-card-buttons">
-                <button className="artifact-card-cancel">Cancelar</button>
-                <button className="artifact-card-delete">Eliminar</button>
-                <button className="artifact-card-save">Guardar</button>
+                <button className="artifact-card-cancel empty-button">Cancelar</button>
+                <button className="artifact-card-delete empty-button">Eliminar</button>
+                <button className="artifact-card-save solid-button">Guardar</button>
             </div>
         </div>
     )

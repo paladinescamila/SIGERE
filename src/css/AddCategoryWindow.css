@@ -1,32 +1,26 @@
-.add-art-win{
+.category-card{
     width: 400px;
 }
 
-.add-art-id{
+.category-card-title{
     font-weight: bold;
 }
 
-.add-art-category,
-.add-art-file{
+.category-card-name, 
+.category-card-color{
     display: flex;
     justify-content: space-between;
 }
 
-.add-art-buttons{
+.category-card-buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2em 0 0 0;
 }
 
-.add-art-file input{
-    display: inline-block;
-    width: 50%;
-}
-
-.add-art-id, 
-.add-art-name,
-.add-art-date, 
-.add-art-category{
+.category-card-title, 
+.category-card-name,
+.category-card-color{
     margin: 0 0 1em 0;
 }

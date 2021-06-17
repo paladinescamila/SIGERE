@@ -1,11 +1,5 @@
 .add-req-win{
-    border: 0.1em solid #ddd;
-    border-radius: 0.5em;
     width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2em;
 }
 
 .add-req-fields{
@@ -50,10 +44,7 @@
 
 .add-req-title{
     font-weight: bold;
-    font-size: 1.5em;
-    display: flex;
     padding: 0 0 1.5em 0;
-    align-self: center;
 }
 
 .add-req-description textarea{
@@ -70,33 +61,5 @@
 .add-req-buttons{
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 0 0 0;
-}
-
-.add-req-buttons button{
-    border: none;
-    padding: 0.5em 1.5em;
-    border-radius: 0.3em;
-    cursor: pointer;
-    font-weight: 600;
-    width: 35%;
-}
-
-.add-req-cancel{
-    color: #333;
-    background-color: transparent;
-}
-
-.add-req-save{
-    color: #fff;
-    background-color: var(--blue-1);
-}
-
-.add-req-cancel:hover{
-    background-color: #ddd;
-}
-
-.add-req-save:hover{
-    background-color: var(--blue-2);
-    ;
+    padding: 1em 0 0 0;
 }

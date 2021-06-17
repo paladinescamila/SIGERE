@@ -1,17 +1,9 @@
 .create-project-card{
-    border: 0.1em solid #ddd;
-    border-radius: 0.5em;
     width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em;
 }
 
 .card-title{
-    font-weight: 500;
-    font-size: 1.5em;
+    font-weight: bold;
     padding: 0 0 1em 0;
 }
 
@@ -24,7 +16,6 @@
 }
 
 .project-description{
-    resize: none;
     width: 100%;
     margin-bottom: 2em;
 }
@@ -33,30 +24,4 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-
-.buttons button{
-    border: none;
-    padding: 0.5em 1.5em;
-    border-radius: 0.3em;
-    cursor: pointer;
-    font-weight: 600;
-    width: 10em;
-}
-
-.cancel-button{
-    color: #333;
-    background-color: transparent;
-}
-.create-button{
-    color: #fff;
-    background-color: var(--blue-1);
-}
-
-.cancel-button:hover{
-    background-color: #ddd;
-}
-
-.create-button:hover{
-    background-color: var(--blue-2);
 }

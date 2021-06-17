@@ -1,11 +1,9 @@
 .artifact-card{
-    border: 0.1em solid #ddd;
-    border-radius: 0.5em;
     width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2em;
+}
+
+.artifact-card-id{
+    font-weight: bold;
 }
 
 .artifact-card-date,
@@ -15,40 +13,11 @@
     justify-content: space-between;
 }
 
-.artifact-card-id{
-    font-weight: bold;
-    font-size: 1.5em;
-    display: flex;
-    align-self: center;
-}
-
 .artifact-card-buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2em 0 0 0;
-}
-
-.artifact-card-cancel, 
-.artifact-card-delete, 
-.artifact-card-save{
-    width: 30%;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 0.5em;
-    font-weight: 500;
-    border-radius: 0.25em;
-}
-
-.artifact-card-cancel:hover, 
-.artifact-card-delete:hover{
-    background-color: #eee;
-}
-
-.artifact-card-save{
-    background-color: var(--blue-1);
-    color: #fff;
 }
 
 .artifact-card-delete{
@@ -60,10 +29,6 @@
     background-color: #ffbfbf;
 }
 
-.artifact-card-save:hover{
-    background-color: var(--blue-2);
-}
-
 .artifact-card-file a{
     background-color: #fff;
     color: var(--blue-1);
@@ -73,5 +38,5 @@
 .artifact-card-name,
 .artifact-card-date, 
 .artifact-card-category{
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
 }

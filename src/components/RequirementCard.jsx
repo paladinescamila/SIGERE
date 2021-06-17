@@ -4,13 +4,13 @@ import requirements from '../data/requirementsData';
 
 export default function RequirementCard({requirement}) {
     return (
-        <div className="requirementCard">
+        <div className="requirementCard win-card">
             <div className="requirementCardFields">
-                <div className="req-id">
+                <div className="req-id card-title">
                     <p>{requirement.id}</p>
                 </div>
                 <div className="req-description">
-                    <textarea>{requirement.description}</textarea>
+                    <textarea className="textarea">{requirement.description}</textarea>
                 </div>
                 <div className="req-state">
                     <p>Estado:</p>
@@ -38,7 +38,7 @@ export default function RequirementCard({requirement}) {
                 </div>
                 <div className="req-priority">
                     <p>Prioridad:</p>
-                    <input type="number" value={requirement.priority}></input>
+                    <input className="input" type="number" value={requirement.priority}></input>
                 </div>
                 <div className="req-version">
                     <p>Versión:</p>
@@ -54,9 +54,9 @@ export default function RequirementCard({requirement}) {
                 </div>
             </div>
             <div className="req-buttons">
-                <button className="req-cancel">Cancelar</button>
-                <button className="req-delete">Eliminar</button>
-                <button className="req-save">Guardar</button>
+                <button className="req-cancel empty-button">Cancelar</button>
+                <button className="req-delete empty-button">Eliminar</button>
+                <button className="req-save solid-button">Guardar</button>
             </div>
         </div>
     )

@@ -1,11 +1,5 @@
 .requirementCard{
-    border: 0.1em solid #ddd;
-    border-radius: 0.5em;
     width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2em;
 }
 
 .requirementCardFields{
@@ -49,10 +43,7 @@
 
 .req-id{
     font-weight: bold;
-    font-size: 1.5em;
-    display: flex;
     padding: 0 0 0.5em 0;
-    align-self: center;
 }
 
 .req-description textarea{
@@ -61,28 +52,10 @@
     margin-bottom: 2em;
 }
 
-.req-priority input{
-    padding: 0.5em;
-    text-align: end;
-}
-
 .req-buttons{
     display: flex;
     justify-content: space-between;
     padding: 1em 0 0 0;
-}
-
-.req-buttons button{
-    border: none;
-    padding: 0.5em 1.5em;
-    border-radius: 0.25em;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.req-cancel{
-    color: #333;
-    background-color: transparent;
 }
 
 .req-delete{
@@ -90,19 +63,6 @@
     background-color: transparent;
 }
 
-.req-save{
-    color: #fff;
-    background-color: var(--blue-1);
-}
-
-.req-cancel:hover{
-    background-color: #ddd;
-}
-
 .req-delete:hover{
     background-color: #ffbfbf;
-}
-
-.req-save:hover{
-    background-color: var(--blue-2);
 }

@@ -3,23 +3,13 @@ import '../css/AddRequirementWindow.css';
 
 export default function AddRequirementWindow() {
     return (
-        <div className="add-req-win">
+        <div className="add-req-win win-card">
             <div className="add-req-fields">
-                <div className="add-req-title">
+                <div className="add-req-title card-title">
                     <p>Agregar requerimiento</p>
                 </div>
                 <div className="add-req-description">
-                    <textarea placeholder="Escriba una descripción..."></textarea>
-                </div>
-                <div className="add-req-state">
-                    <p>Estado:</p>
-                    <select>
-                        <option>Sin procesar</option>
-                        <option>Procesado</option>
-                        <option>Validado</option>
-                        <option>Negociado</option>
-                        <option>Terminado</option>
-                    </select>
+                    <textarea className="textarea" placeholder="Escriba una descripción..."></textarea>
                 </div>
                 <div className="add-req-category">
                     <p>Categoría:</p>
@@ -37,12 +27,12 @@ export default function AddRequirementWindow() {
                 </div>
                 <div className="add-req-priority">
                     <p>Prioridad:</p>
-                    <input type="number" placeholder="Inserte un número..." ></input>
+                    <input className="input" type="number" placeholder="Inserte un número..." ></input>
                 </div>
             </div>
             <div className="add-req-buttons">
-                <button className="add-req-cancel">Cancelar</button>
-                <button className="add-req-save">Agregar</button>
+                <button className="add-req-cancel empty-button">Cancelar</button>
+                <button className="add-req-save solid-button">Agregar</button>
             </div>
         </div>
     )

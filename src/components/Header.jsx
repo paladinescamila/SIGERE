@@ -18,7 +18,7 @@ export function Header() {
             </div>
             <div className="header-search-profile">
                 <div className="header-search">
-                    <input className="search" type="text" placeholder="Buscar..."></input>
+                    <input className="search input" type="text" placeholder="Buscar..."></input>
                     <img src={searchButton} alt="Seach"></img>
                 </div>
                 <img src={profilePhoto} alt="Profile" className="header-profile"></img>
