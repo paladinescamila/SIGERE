@@ -1,0 +1,10 @@
+.category-card{
+    width: 400px;
+}
+
+.category-card-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;    
+}

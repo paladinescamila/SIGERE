@@ -32,6 +32,8 @@ import AddCategoryWindow from './components/AddCategoryWindow';
 import DiagramsTable from './components/DiagramsTable';
 import DiagramCard from './components/DiagramCard';
 import AddDiagramWindow from './components/AddDiagramWindow';
+import CategoryCard from './components/CategoryCard';
+import categories from './data/categories';
 
 
 function App() {
@@ -63,8 +65,9 @@ function App() {
     <RequirementsTable projectId={'Project-001'}/>
     <ProjectSettings projectId={'Project-001'}/>
     <DiagramsTable projectId={'Project-001'}/>
-    <AddDiagramWindow/> */}
-    <DiagramCard diagram={diagramsData['Project-001'][0]}/>
+    <AddDiagramWindow/>
+    <DiagramCard diagram={diagramsData['Project-001'][0]}/> */}
+    <CategoryCard category={categories['Project-001'][0]} />
     {/* <Router>
       <AssideAccount/>
       <Switch>
