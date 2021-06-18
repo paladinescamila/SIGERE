@@ -64,7 +64,7 @@ export default function RequirementCard({requirement}) {
             </div>
             <div className="card-3-buttons">
                 <button className="req-cancel empty-button">Cancelar</button>
-                <button className="req-delete empty-button">Eliminar</button>
+                <button className="req-delete delete-button">Eliminar</button>
                 <button className="req-save solid-button">Guardar</button>
             </div>
         </div>

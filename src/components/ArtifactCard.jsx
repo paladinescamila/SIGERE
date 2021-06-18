@@ -19,7 +19,7 @@ export default function ArtifactCard({artifact}) {
             </div>
             <div className="card-3-buttons">
                 <button className="artifact-card-cancel empty-button">Cancelar</button>
-                <button className="artifact-card-delete empty-button">Eliminar</button>
+                <button className="artifact-card-delete delete-button">Eliminar</button>
                 <button className="artifact-card-save solid-button">Guardar</button>
             </div>
         </div>

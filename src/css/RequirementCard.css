@@ -51,12 +51,3 @@
     width: 100%;
     margin-bottom: 2em;
 }
-
-.req-delete{
-    color: #ff3333;
-    background-color: transparent;
-}
-
-.req-delete:hover{
-    background-color: #ffbfbf;
-}

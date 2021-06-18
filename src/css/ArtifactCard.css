@@ -15,15 +15,6 @@
     margin: 0.1em;
 }
 
-.artifact-card-delete{
-    color: #ff3333;
-    background-color: transparent;
-}
-
-.artifact-card-delete:hover{
-    background-color: #ffbfbf;
-}
-
 .artifact-card-file a{
     background-color: #fff;
     color: var(--blue-1);

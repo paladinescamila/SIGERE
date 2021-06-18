@@ -5,7 +5,7 @@ import '../css/DiagramsTable.css';
 
 export default function DiagramsTable({projectId}) {
     return (
-        <table className="diagrams-table">
+        <table className="diagrams-table table">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
@@ -14,7 +14,7 @@ export default function DiagramsTable({projectId}) {
                 {
                     diagramsData[projectId].map((d) => <DiagramItem diagram={d}/>)
                 }
-            <tr className="add-diagram-button">
+            <tr className="add-diagram-button add-button">
                 <td colSpan="4">Agregar diagrama</td>
             </tr>
         </table>

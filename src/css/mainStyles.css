@@ -17,6 +17,8 @@
     outline: none;
 }
 
+/* BUTTONS */
+
 .solid-button{
     background-color: var(--blue-1);
     color: #fff;
@@ -45,6 +47,22 @@
     background-color: #ededed;
 }
 
+.delete-button{
+    background-color: #fff;
+    border: none;
+    color: #f11;
+    cursor: pointer;
+    padding: 0.5em;
+    font-weight: 500;
+    border-radius: 0.25em;
+}
+
+.delete-button:hover{
+    background-color: rgb(253, 191, 191);
+}
+
+/* INPUTS */
+
 .input, .textarea{
     background-color: #efefef;
     border: 0.15em solid #efefef;
@@ -61,6 +79,8 @@
     resize: none;
 }
 
+/* CARDS */
+
 .card-title{
     font-size: 1.5em;
     display: flex;
@@ -76,6 +96,8 @@
     justify-content: space-between;
     padding: 2em;
 }
+
+/* CARD BUTTONS */
 
 .card-2-buttons{
     padding: 2em 0 0 0;

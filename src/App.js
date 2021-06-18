@@ -7,6 +7,7 @@ import requirementsData from './data/requirements';
 import artifactsData from './data/artifacts';
 import projectsData from './data/projects.js';
 import usersData from './data/users.js';
+import diagramsData from './data/diagrams';
 
 // COMPONENTS
 import Login from './components/Login';
@@ -29,6 +30,7 @@ import AddArtifactWindow from './components/AddArtifactWindow';
 import CategoriesList from './components/CategoriesList';
 import AddCategoryWindow from './components/AddCategoryWindow';
 import DiagramsTable from './components/DiagramsTable';
+import DiagramCard from './components/DiagramCard';
 
 
 function App() {
@@ -58,8 +60,9 @@ function App() {
     <ProjectsList/>
     <RequirementCard requirement={requirementsData['Project-001'][2]}/>
     <RequirementsTable projectId={'Project-001'}/>
-    <ProjectSettings projectId={'Project-001'}/> */}
-    <DiagramsTable projectId={'Project-001'}/>
+    <ProjectSettings projectId={'Project-001'}/>
+    <DiagramsTable projectId={'Project-001'}/> */}
+    <DiagramCard diagram={diagramsData['Project-001'][0]}/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
