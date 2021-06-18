@@ -51,7 +51,7 @@ export default function RequirementCard({requirement}) {
                 </div>
                 <div className="req-version">
                     <p>Versión:</p>
-                    <p>{requirement.version}</p>
+                    <p>{requirement.version[0]}.{requirement.version[1]}</p>
                 </div>
                 <div className="req-created">
                     <p>Fecha de creación:</p>

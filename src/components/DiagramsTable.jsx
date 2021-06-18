@@ -1,12 +1,11 @@
 import React from 'react';
-import DiagramItem from './DiagramItem';
 import diagramsData from '../data/diagrams';
-import '../css/DiagramsTable.css';
 import addIcon from '../img/add.svg';
+
 
 export default function DiagramsTable({projectId}) {
     return (
-        <table className="diagrams-table table">
+        <table className="table">
             <tr>
                 <th>ID</th>
                 <th>Diagrama</th>
@@ -14,7 +13,7 @@ export default function DiagramsTable({projectId}) {
                 {
                     diagramsData[projectId].map((d) => <DiagramItem diagram={d}/>)
                 }
-            <tr className="add-diagram-button add-button">
+            <tr className="add-button-table">
                 <td colSpan="4">
                     <div>
                         <img src={addIcon} alt="Add"></img>
@@ -23,5 +22,15 @@ export default function DiagramsTable({projectId}) {
                 </td>
             </tr>
         </table>
+    )
+}
+
+
+function DiagramItem({diagram}) {
+    return (
+        <tr>
+            <td>{diagram.id}</td>
+            <td>{diagram.type}</td>
+        </tr>
     )
 }

@@ -35,6 +35,7 @@ import CategoriesList from './components/CategoriesList';
 import CategoryCard from './components/CategoryCard';
 import AddCategoryWindow from './components/AddCategoryWindow';
 import ProjectVersionsTable from './components/ProjectsVersionsTable';
+import RequirementsVersionsTable from './components/RequirementsVersionsTable';
 
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
     <CategoryCard category={categoriesData['Project-001'][0]} />
     <AddCategoryWindow/>
     <ProjectVersionsTable projectId={'Project-001'}/> */}
+    <RequirementsVersionsTable projectId={'Project-001'} requirementId={'R002'}/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
@@ -90,11 +92,11 @@ function App() {
         <Route path='/files' component={}/>
       </Switch>
     </Router> */}
-      <div class="container">
+      {/* <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
