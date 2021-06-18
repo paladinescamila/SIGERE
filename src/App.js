@@ -48,7 +48,7 @@ function App() {
   
   return (
     <>
-    <AccountSettings email={'pepito@sigere.com'}/>
+    {/* <AccountSettings email={'pepito@sigere.com'}/>
     <AddArtifactWindow projectId={'Project-001'}/>
     <AddRequirementWindow projectId={'Project-001'}/>
     <ArtifactCard artifact={artifactsData['Project-001'][0]}/>
@@ -63,8 +63,8 @@ function App() {
     <RequirementsTable projectId={'Project-001'}/>
     <ProjectSettings projectId={'Project-001'}/>
     <DiagramsTable projectId={'Project-001'}/>
+    <AddDiagramWindow/> */}
     <DiagramCard diagram={diagramsData['Project-001'][0]}/>
-    <AddDiagramWindow/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
