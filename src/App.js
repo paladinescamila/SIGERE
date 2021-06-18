@@ -35,7 +35,7 @@ import CategoriesList from './components/CategoriesList';
 import CategoryCard from './components/CategoryCard';
 import AddCategoryWindow from './components/AddCategoryWindow';
 import ProjectVersionsTable from './components/ProjectsVersionsTable';
-import RequirementsVersionsTable from './components/RequirementsVersionsTable';
+import Conector_Projects from './components/Conector_Projects';
 
 
 function App() {
@@ -49,16 +49,6 @@ function App() {
   }
   
   const [display, setDisplay] = useState(<Login signupOption={signupOption} />);
-
-  const createProjectOption = () => {
-    setDisplay(<Projects projects={createProjectOption} />);
-  }
-  
-  const projectsOption = () => {
-    setDisplay(<CreateProjectWindow projectsOption={projectsOption} />);
-  }
-  
-  const [displayProjects, setDisplayProjects] = useState(<Projects projectsOption={projectsOption} />);
   
   return (
     <>
@@ -81,17 +71,16 @@ function App() {
     <CategoryCard category={categoriesData['Project-001'][0]} />
     <AddCategoryWindow/>
     <ProjectVersionsTable projectId={'Project-001'}/> */}
-    <RequirementsVersionsTable projectId={'Project-001'} requirementId={'R002'}/>
-    {/* <Router>
+    <Router>
       <AssideAccount/>
       <Switch>
-        <Route path='/' exact component={Projects}/>
+        <Route path='/' exact component={Conector_Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
-        <Route path='/intro' component={}/>
+        {/* <Route path='/intro' component={}/>
         <Route path='/general' component={}/>
-        <Route path='/files' component={}/>
+        <Route path='/files' component={}/> */}
       </Switch>
-    </Router> */}
+    </Router>
       {/* <div class="container">
         <div class="login-or-signup">
           {display}

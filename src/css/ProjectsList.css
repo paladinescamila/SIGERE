@@ -4,3 +4,68 @@
     list-style: none;
     width: 800px;
 }
+
+.project-item-card{
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid #ccc;
+    cursor: pointer;
+}
+
+.project-item-card:hover{
+    background-color: #fafafa;
+}
+
+.project-card-name{
+    font-size: 1.3em;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.project-card-description{
+    margin: 0.5em 0 0 0;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.progress-bar-and-admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5em 0 0 0;
+}
+
+.project-progress-bar{
+    display: flex;
+    height: 0.5em;
+    width: 90%;
+    border-radius: 0.5em;
+    background-color: #ddd;
+}
+
+.project-progress{
+    background-color: #999;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.admin-card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    height: 1.3em;
+}
+
+.admin-card img{
+    height: 70%;
+    margin: 0 0.5em 0 0;
+}

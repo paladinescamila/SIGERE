@@ -17,6 +17,8 @@
     outline: none;
 }
 
+
+
 /* BUTTONS */
 
 .solid-button{
@@ -61,6 +63,8 @@
     background-color: rgb(253, 191, 191);
 }
 
+
+
 /* INPUTS */
 
 .input, .textarea{
@@ -79,6 +83,8 @@
     resize: none;
 }
 
+
+
 /* CARDS */
 
 .card-title{
@@ -96,6 +102,8 @@
     justify-content: space-between;
     padding: 2em;
 }
+
+
 
 /* CARD BUTTONS */
 
@@ -119,6 +127,7 @@ select{
     padding: 0.5em;
     border-radius: 0.5em;
 }
+
 
 
 /* TABLES */
