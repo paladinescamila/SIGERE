@@ -3,7 +3,7 @@ import searchButton from '../img/search.svg';
 import ProjectsList from './ProjectsList';
 import "../css/Projects.css"
 
-function Projects({createProjectOption}) {
+export default function Projects({createProjectOption}) {
 
     const changeToCreateProject = () => {
         createProjectOption();
@@ -27,5 +27,3 @@ function Projects({createProjectOption}) {
         </div>
     )
 }
-
-export default Projects
