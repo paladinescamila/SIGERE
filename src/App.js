@@ -8,6 +8,7 @@ import artifactsData from './data/artifacts';
 import projectsData from './data/projects.js';
 import usersData from './data/users.js';
 import diagramsData from './data/diagrams';
+import categoriesData from './data/categories';
 
 // COMPONENTS
 import Login from './components/Login';
@@ -27,13 +28,12 @@ import ProjectSettings from './components/ProjectSettings';
 import ArtifactsTable from './components/ArtifactsTable';
 import ArtifactCard from './components/ArtifactCard';
 import AddArtifactWindow from './components/AddArtifactWindow';
-import CategoriesList from './components/CategoriesList';
-import AddCategoryWindow from './components/AddCategoryWindow';
 import DiagramsTable from './components/DiagramsTable';
 import DiagramCard from './components/DiagramCard';
 import AddDiagramWindow from './components/AddDiagramWindow';
+import CategoriesList from './components/CategoriesList';
 import CategoryCard from './components/CategoryCard';
-import categories from './data/categories';
+import AddCategoryWindow from './components/AddCategoryWindow';
 
 
 function App() {
@@ -50,24 +50,24 @@ function App() {
   
   return (
     <>
-    {/* <AccountSettings email={'pepito@sigere.com'}/>
-    <AddArtifactWindow projectId={'Project-001'}/>
-    <AddRequirementWindow projectId={'Project-001'}/>
-    <ArtifactCard artifact={artifactsData['Project-001'][0]}/>
-    <ArtifactsTable projectId={'Project-001'}/>
-    <CategoriesList/>
-    <AddCategoryWindow/>
-    <CreateProjectWindow/>
+    <AccountSettings email={'pepito@sigere.com'}/>
     <Header/>
     <IntroductionSection/>
-    <ProjectsList/>
-    <RequirementCard requirement={requirementsData['Project-001'][2]}/>
     <RequirementsTable projectId={'Project-001'}/>
+    <RequirementCard requirement={requirementsData['Project-001'][2]}/>
+    <AddRequirementWindow projectId={'Project-001'}/>
+    <ProjectsList/>
+    <CreateProjectWindow/>
     <ProjectSettings projectId={'Project-001'}/>
+    <ArtifactsTable projectId={'Project-001'}/>
+    <ArtifactCard artifact={artifactsData['Project-001'][0]}/>
+    <AddArtifactWindow projectId={'Project-001'}/>
     <DiagramsTable projectId={'Project-001'}/>
+    <DiagramCard diagram={diagramsData['Project-001'][0]}/>
     <AddDiagramWindow/>
-    <DiagramCard diagram={diagramsData['Project-001'][0]}/> */}
-    <CategoryCard category={categories['Project-001'][0]} />
+    <CategoriesList/>
+    <CategoryCard category={categoriesData['Project-001'][0]} />
+    <AddCategoryWindow/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
