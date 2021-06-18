@@ -8,6 +8,9 @@ function Projects() {
         <div className="project">
             <div className="searcher-header">
                 <h2>Mis Proyectos</h2>
+                <div>
+                    <button className="login-form-button">Crear-Proyecto</button>
+                </div>
                 <div className="searcher-search">
                     <input className="search" type="text" placeholder="Buscar Proyecto..."></input>
                     <img src={searchButton} alt="Search"></img>
@@ -16,6 +19,7 @@ function Projects() {
             <div>
                 <ProjectsList/>
             </div>
+
         </div>
     )
 }

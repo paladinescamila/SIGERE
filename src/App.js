@@ -68,9 +68,12 @@ function App() {
       <Switch>
         <Route path='/' exact component={Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
+        {/* <Route path='/intro' component={}/>
+        <Route path='/general' component={}/>
+        <Route path='/files' component={}/> */}
 
       </Switch>
-    </Router> */}
+    </Router>
       {/* <div class="container">
         <div class="login-or-signup">
           {display}
