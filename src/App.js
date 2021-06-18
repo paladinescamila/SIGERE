@@ -47,6 +47,16 @@ function App() {
   }
   
   const [display, setDisplay] = useState(<Login signupOption={signupOption} />);
+
+  const createProjectOption = () => {
+    setDisplay(<Projects projects={createProjectOption} />);
+  }
+  
+  const projectsOption = () => {
+    setDisplay(<CreateProjectWindow projectsOption={projectsOption} />);
+  }
+  
+  const [displayProjects, setDisplayProjects] = useState(<Projects projectsOption={projectsOption} />);
   
   return (
     <>
