@@ -5,7 +5,6 @@ export default function DiagramItem({diagram}) {
     return (
         <tr>
             <td className="diagram-id">{diagram.id}</td>
-            <td className="diagram-name">{diagram.name}</td>
             <td className="diagram-type">{diagram.type}</td>
         </tr>
     )

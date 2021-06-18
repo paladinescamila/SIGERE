@@ -49,3 +49,14 @@
 .add-art-button td:hover{
     background-color: #fafafa;
 }
+
+.add-art-button img{
+    width: 15px;
+    margin-right: 1em;
+}
+
+.add-art-button div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

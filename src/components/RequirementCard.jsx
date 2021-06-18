@@ -13,7 +13,7 @@ export default function RequirementCard({requirement}) {
         <div className="requirementCard win-card">
             <div className="requirementCardFields">
                 <div className="req-id card-title">
-                    <p>{requirement.id}</p>
+                    <p>Acerca del requerimiento</p>
                 </div>
                 <div className="req-description">
                     <textarea className="textarea">{requirement.description}</textarea>

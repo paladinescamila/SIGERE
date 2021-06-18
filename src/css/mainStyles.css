@@ -34,7 +34,7 @@
 }
 
 .empty-button{
-    background-color: #fff;
+    background-color: #ededed;
     border: none;
     color: #222;
     cursor: pointer;
@@ -44,11 +44,11 @@
 }
 
 .empty-button:hover{
-    background-color: #ededed;
+    background-color: #ddd;
 }
 
 .delete-button{
-    background-color: #fff;
+    background-color: rgb(255, 211, 211);
     border: none;
     color: #f11;
     cursor: pointer;

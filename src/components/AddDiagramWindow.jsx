@@ -1,15 +1,11 @@
 import React from 'react';
-import '../css/DiagramCard.css';
+import '../css/AddDiagramWindow.css';
 
-export default function DiagramCard({diagram}) {
-
-    const photo = '../data/diagrama_de_componentes.png';
-    
+export default function AddDiagramWindow() {
     return (
-        <div className="win-card diagram-card">
-            <p className="card-title">Acerca del diagrama</p>
-            <img alt="Imagen del diagrama" src={photo}></img>
-            <textarea className="textarea">{diagram.description}</textarea>
+        <div className="win-card add-diagram-win">
+            <p className="card-title">Agregar diagrama</p>
+            <textarea placeholder="Escriba una descripción..." className="textarea"></textarea>
             <div className="add-diagram-fields">
                 <p>Tipo de diagrama</p>
                 <select>
@@ -18,9 +14,12 @@ export default function DiagramCard({diagram}) {
                     <option>De actividades</option>
                 </select>
             </div>
-            <div className="card-3-buttons">
+            <div className="add-diagram-fields">
+                <p>Imagen</p>
+                <input type="file"></input>
+            </div>
+            <div className="card-2-buttons">
                 <button className="empty-button">Cancelar</button>
-                <button className="delete-button">Eliminar</button>
                 <button className="solid-button">Guardar</button>
             </div>
         </div>

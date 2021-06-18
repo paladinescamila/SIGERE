@@ -7,7 +7,7 @@ export default function ArtifactCard({artifact}) {
 
     return (
         <div className="artifact-card win-card">
-            <p className="artifact-card-id card-title">{artifact.id}</p>
+            <p className="artifact-card-id card-title">Acerca del artefacto</p>
             <input className="artifact-card-name input" type="text" value={artifact.name}></input>
             <div className="artifact-card-date">
                 <p>Fecha de subida:</p>

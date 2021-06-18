@@ -49,3 +49,14 @@
 .add-req-button td:hover{
     background-color: #fafafa;
 }
+
+.add-req-button img{
+    width: 15px;
+    margin-right: 1em;
+}
+
+.add-req-button div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

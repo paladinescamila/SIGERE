@@ -31,6 +31,7 @@ import CategoriesList from './components/CategoriesList';
 import AddCategoryWindow from './components/AddCategoryWindow';
 import DiagramsTable from './components/DiagramsTable';
 import DiagramCard from './components/DiagramCard';
+import AddDiagramWindow from './components/AddDiagramWindow';
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
   
   return (
     <>
-    {/* <AccountSettings email={'pepito@sigere.com'}/>
+    <AccountSettings email={'pepito@sigere.com'}/>
     <AddArtifactWindow projectId={'Project-001'}/>
     <AddRequirementWindow projectId={'Project-001'}/>
     <ArtifactCard artifact={artifactsData['Project-001'][0]}/>
@@ -61,19 +62,19 @@ function App() {
     <RequirementCard requirement={requirementsData['Project-001'][2]}/>
     <RequirementsTable projectId={'Project-001'}/>
     <ProjectSettings projectId={'Project-001'}/>
-    <DiagramsTable projectId={'Project-001'}/> */}
+    <DiagramsTable projectId={'Project-001'}/>
     <DiagramCard diagram={diagramsData['Project-001'][0]}/>
+    <AddDiagramWindow/>
     {/* <Router>
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Projects}/>
         <Route path='/requirements' component={AccountSettings}/>
-        {/* <Route path='/intro' component={}/>
+        <Route path='/intro' component={}/>
         <Route path='/general' component={}/>
-        <Route path='/files' component={}/> */}
-
+        <Route path='/files' component={}/>
       </Switch>
-    </Router>
+    </Router> */}
       {/* <div class="container">
         <div class="login-or-signup">
           {display}

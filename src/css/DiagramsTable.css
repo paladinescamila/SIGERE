@@ -47,3 +47,14 @@
 .add-diagram-button td:hover{
     background-color: #fafafa;
 }
+
+.add-diagram-button img{
+    width: 15px;
+    margin-right: 1em;
+}
+
+.add-diagram-button div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

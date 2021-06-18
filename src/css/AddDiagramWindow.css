@@ -1,0 +1,20 @@
+.add-diagram-win{
+    width: 400px;
+}
+
+.add-diagram-fields{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-diagram-win input, 
+.add-diagram-win textarea, 
+.add-diagram-fields{
+    margin: 0.8em 0 0 0;
+}
+
+.add-diagram-fields input{
+    display: inline-block;
+    width: 50%;
+}

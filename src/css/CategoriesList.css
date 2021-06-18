@@ -48,9 +48,4 @@
     width: fit-content;
     margin: 1px;
     cursor: pointer;
-    transition: transform 1s;
-}
-
-.categories-list li:hover{
-    transform: scale(1.05);
 }

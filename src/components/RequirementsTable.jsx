@@ -2,6 +2,7 @@ import '../css/RequirementsTable.css';
 import requirementsData from "../data/requirements.js";
 import RequirementItem from './RequirementItem.jsx';
 import React from 'react';
+import addIcon from '../img/add.svg';
 
 export default function RequirementsTable({projectId}) {
 
@@ -22,7 +23,12 @@ export default function RequirementsTable({projectId}) {
                 requirementsData[projectId].map((r) => <RequirementItem requirement={r} />)
             }
             <tr className="add-req-button">
-                <td colSpan="4">Agregar requisito</td>
+                <td colSpan="4">
+                    <div>
+                        <img src={addIcon} alt="Add"></img>
+                        Agregar requisito
+                    </div>
+                </td>
             </tr>
         </table>
     )
