@@ -18,13 +18,13 @@
     border-bottom: 0.1em solid #eee;
 }
 
-.diagrams-table tr:nth-child(even){
-    background-color: #fefefe;
+.diagrams-table tr:nth-child(odd){
+    background-color: #f5f5f5;
     cursor: pointer;
 }
 
-.diagrams-table tr:nth-child(odd){
-    background-color: #fafafa;
+.diagrams-table tr:nth-child(even){
+    background-color: #fefefe;
     cursor: pointer;
 }
 
