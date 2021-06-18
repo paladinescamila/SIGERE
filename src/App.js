@@ -34,6 +34,7 @@ import AddDiagramWindow from './components/AddDiagramWindow';
 import CategoriesList from './components/CategoriesList';
 import CategoryCard from './components/CategoryCard';
 import AddCategoryWindow from './components/AddCategoryWindow';
+import ProjectVersionsTable from './components/ProjectsVersionsTable';
 
 
 function App() {
@@ -50,7 +51,7 @@ function App() {
   
   return (
     <>
-    <AccountSettings email={'pepito@sigere.com'}/>
+    {/* <AccountSettings email={'pepito@sigere.com'}/>
     <Header/>
     <IntroductionSection/>
     <RequirementsTable projectId={'Project-001'}/>
@@ -67,7 +68,8 @@ function App() {
     <AddDiagramWindow/>
     <CategoriesList/>
     <CategoryCard category={categoriesData['Project-001'][0]} />
-    <AddCategoryWindow/>
+    <AddCategoryWindow/> */}
+    <ProjectVersionsTable projectId={'Project-001'}/>
     {/* <Router>
       <AssideAccount/>
       <Switch>

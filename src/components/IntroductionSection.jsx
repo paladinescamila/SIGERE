@@ -25,6 +25,7 @@ export default function IntroductionSection() {
                 <p>Apreciación global</p>
                 <textarea className="textarea"></textarea>
             </div>
+            <button className="solid-button">Guardar</button>
         </div>
     )
 }

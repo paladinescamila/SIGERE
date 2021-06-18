@@ -19,12 +19,12 @@
     border-bottom: 0.1em solid #eee;
 }
 
-.art-table tr:nth-child(even) {
-    background-color: #fefefe;
+.art-table tr:nth-child(odd) {
+    background-color: #f5f5f5;
 }
 
-.art-table tr:nth-child(odd) {
-    background-color: #fafafa;
+.art-table tr:nth-child(even) {
+    background-color: #fefefe;
 }
 
 .art-table tr{
