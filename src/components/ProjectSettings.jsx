@@ -40,6 +40,7 @@ export default function ProjectSettings({projectId}) {
                         collaboratorsData[projectId].map((u) => <li>{u.email} ({u.type})</li>)
                     }
                 </ul>
+                <button className="solid-button add-member">Agregar miembro</button>
             </div>
             <button className="solid-button">Guardar</button>
         </div>

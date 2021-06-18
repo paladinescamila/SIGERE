@@ -57,4 +57,13 @@
     display: grid;
     grid-gap: 0.5em;
     color: #555;
-}   
+}
+
+.add-member{
+    background-color: var(--blue-4);
+    margin-top: 1em;
+}
+
+.add-member:hover{
+    background-color: var(--blue-5);
+}

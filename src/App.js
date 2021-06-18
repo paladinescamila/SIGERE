@@ -68,8 +68,8 @@ function App() {
     <AddDiagramWindow/>
     <CategoriesList/>
     <CategoryCard category={categoriesData['Project-001'][0]} />
-    <AddCategoryWindow/> */}
-    <ProjectVersionsTable projectId={'Project-001'}/>
+    <AddCategoryWindow/>
+    <ProjectVersionsTable projectId={'Project-001'}/> */}
     {/* <Router>
       <AssideAccount/>
       <Switch>
@@ -80,11 +80,11 @@ function App() {
         <Route path='/files' component={}/>
       </Switch>
     </Router> */}
-      {/* <div class="container">
+      <div class="container">
         <div class="login-or-signup">
           {display}
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
