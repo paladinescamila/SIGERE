@@ -79,8 +79,8 @@ function App() {
       <Switch>
         <Route path='/' exact component={Conector_Projects}/>
         <Route path='/requirements' component={Conector_Requirements}/>
-        {/* <Route path='/intro' component={}/>
-        <Route path='/general' component={}/>
+        <Route path='/intro' component={IntroductionSection}/>
+        {/* <Route path='/general' component={}/>
         <Route path='/files' component={}/> */}
       </Switch>
     </Router>
