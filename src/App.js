@@ -39,7 +39,6 @@ import RequirementsVersionsTable from './components/RequirementsVersionsTable';
 import Conector_Projects from './components/Conector_Projects';
 import Calendar from './components/Calendar';
 import Conector_Requirements from './components/Conector_Requirements'
-import worker_asside from './components/worker_asside';
 
 
 import Super from './components/Super';

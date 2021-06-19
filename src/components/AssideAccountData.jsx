@@ -21,15 +21,15 @@ export const SidebarDataAccount = [
         cName: 'nav-text'
     },
     {
-        title:'Generalidades',
-        path: '/general',
-        /*icon: <AiIcons.AiOutlineCalendar/>,*/
-        cName: 'nav-text'
-    },
-    {
         title:'Archivos',
         path: '/files',
         /*icon: <FiIcons.FiSettings/>,*/
+        cName: 'nav-text'
+    },
+    {
+        title:'Configuraciones',
+        path: '/settingsProject',
+        /*icon: <AiIcons.AiOutlineCalendar/>,*/
         cName: 'nav-text'
     }
 ]
