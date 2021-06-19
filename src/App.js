@@ -38,22 +38,27 @@ import ProjectVersionsTable from './components/ProjectsVersionsTable';
 import RequirementsVersionsTable from './components/RequirementsVersionsTable';
 import Conector_Projects from './components/Conector_Projects';
 import Calendar from './components/Calendar';
+import Conector_Requirements from './components/Conector_Requirements'
+import worker_asside from './components/worker_asside';
 
+
+import Super from './components/Super';
 
 function App() {
 
-  const loginOption = () => {
-    setDisplay(<Login signupOption={signupOption} />);
-  }
+  // const loginOption = () => {
+  //   setDisplay(<Login signupOption={signupOption} />);
+  // }
   
-  const signupOption = () => {
-    setDisplay(<Signup loginOption={loginOption} />);
-  }
+  // const signupOption = () => {
+  //   setDisplay(<Signup loginOption={loginOption} />);
+  // }
   
-  const [display, setDisplay] = useState(<Login signupOption={signupOption} />);
+  // const [display, setDisplay] = useState(<Login signupOption={signupOption} />);
   
   return (
     <>
+    <Super/>
     {/* <AccountSettings email={'pepito@sigere.com'}/>
     <Header/>
     <IntroductionSection/>
@@ -73,18 +78,14 @@ function App() {
     <CategoryCard category={categoriesData['Project-001'][0]} />
     <AddCategoryWindow/>
     <ProjectVersionsTable projectId={'Project-001'}/>
-    <RequirementsVersionsTable projectId={'Project-001'} requirementId={'R002'}/>
-    <Calendar/> */}
-    <Router>
       <AssideAccount/>
       <Switch>
-        <Route path='/' exact component={Conector_Projects}/>
-        <Route path='/requirements' component={AccountSettings}/>
-        {/* <Route path='/intro' component={}/>
-        <Route path='/general' component={}/>
-        <Route path='/files' component={}/> */}
+        <Route path='/requirements' component={Conector_Requirements}/>
+        <Route path='/intro' component={IntroductionSection}/>
+        {/* <Route path='/general' component={}/>
+        <Route path='/files' component={}/>
       </Switch>
-    </Router>
+    </Router> */}
       {/* <div class="container">
         <div class="login-or-signup">
           {display}
