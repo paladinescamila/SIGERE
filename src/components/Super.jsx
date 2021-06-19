@@ -24,16 +24,26 @@ function Super() {
       }
 
       const profile = () => {
-        setDisplay(<Router>
-          <Asside/>
+        setDisplay(
+          // <Router>
+          // <Asside/>
+          // <Switch>
+          //     <Route exact path='/' exact component={Conector_Projects}/>
+          //     <Route path='/projects' component={Conector_Projects}/>
+          //     {/* <Route path='/shared' component={}/> */}
+          //     <Route path='/calendar' component={Calendar}/>
+          //     {/* <Route path='/settings' component={}/> */}
+          // </Switch>
+          // </Router>
+          <Router>
+          <AssideAccount/>
           <Switch>
-              <Route exact path='/' exact component={Conector_Projects}/>
-              <Route path='/projects' component={Conector_Projects}/>
-              {/* <Route path='/shared' component={}/> */}
-              <Route path='/calendar' component={Calendar}/>
-              {/* <Route path='/settings' component={}/> */}
+            <Route exact path='/' exact component={Conector_Projects}/>
+            <Route path='/requirements' component={Conector_Requirements}/>
+            <Route path='/intro' component={IntroductionSection}/>
           </Switch>
-          </Router>);
+          </Router>
+          );
       }
 
       const projectsAsside = () => {

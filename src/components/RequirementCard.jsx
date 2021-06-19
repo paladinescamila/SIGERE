@@ -4,11 +4,13 @@ import requirementsData from '../data/requirements';
 import categoriesData from '../data/categories';
 import standardDate from '../functions/dateConverter';
 
-export default function RequirementCard({requirement}) {
+export default function RequirementCard({requirement, requirementsOption}) {
 
     const requirementsMap = Object.entries(requirementsData)
     const projectId = requirementsMap.find((p) => p[1].find((r) => r.id === requirement.id).id === requirement.id)[0];
-
+    const changeToRequirements = () => {
+        requirementsOption();
+    };
     return (
         <div className="requirementCard win-card">
             <div className="requirementCardFields">
@@ -65,7 +67,7 @@ export default function RequirementCard({requirement}) {
             <div className="card-3-buttons">
                 <button className="req-cancel empty-button">Cancelar</button>
                 <button className="req-delete delete-button">Eliminar</button>
-                <button className="req-save solid-button">Guardar</button>
+                <button className="req-save solid-button" onClick={changeToRequirements}>Guardar</button>
             </div>
         </div>
     )
