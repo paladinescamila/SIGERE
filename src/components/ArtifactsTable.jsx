@@ -4,7 +4,10 @@ import addIcon from '../img/add.svg';
 import standardDate from '../functions/dateConverter.js';
 
 
-export default function ArtifactsTable({projectId}) {
+export default function ArtifactsTable({projectId, createArtifactOption}) {
+    const changeToCreateArtifact = () => {
+        createArtifactOption();
+    };
     return (
         <table className="table">
             <tr>
@@ -18,7 +21,7 @@ export default function ArtifactsTable({projectId}) {
             <tr className="add-button-table">
                 <td colSpan={3}>
                     <div>
-                        <img src={addIcon} alt="Add"></img>
+                        <img src={addIcon} alt="Add" onClick={changeToCreateArtifact}></img>
                         <p>Agregar artefacto</p>
                     </div>
                 </td>

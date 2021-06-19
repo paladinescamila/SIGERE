@@ -3,7 +3,10 @@ import diagramsData from '../data/diagrams';
 import addIcon from '../img/add.svg';
 
 
-export default function DiagramsTable({projectId}) {
+export default function DiagramsTable({projectId, createDiagramOption}) {
+    const changeToCreateDiagram = () => {
+        createDiagramOption();
+    };
     return (
         <table className="table">
             <tr>
@@ -16,7 +19,7 @@ export default function DiagramsTable({projectId}) {
             <tr className="add-button-table">
                 <td colSpan="4">
                     <div>
-                        <img src={addIcon} alt="Add"></img>
+                        <img src={addIcon} alt="Add" onClick={changeToCreateDiagram}></img>
                         <p>Agregar diagrama</p>
                     </div>
                 </td>

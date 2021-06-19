@@ -8,7 +8,7 @@ import Calendar from './Calendar';
 import Header from './Header';
 import Conector_Projects from './Conector_Projects';
 import Conector_Requirements from './Conector_Requirements';
-import conector_archivos from './conector_archivos';
+import Conector_archivos from './conector_archivos';
 import IntroductionSection from './IntroductionSection';
 import ProjectSettings from './ProjectSettings';
 //CSS
@@ -42,7 +42,7 @@ function Super() {
             <Route exact path='/' exact component={Conector_Projects}/>
             <Route path='/requirements' component={Conector_Requirements}/>
             <Route path='/intro' component={IntroductionSection}/>
-            <Route path='/files' component={conector_archivos}/>
+            <Route path='/files' component={Conector_archivos}/>
             {/* <Route path='/settingsProject' component={ProjectSettings('Project-001')}/> */}
           </Switch>
           </Router>
