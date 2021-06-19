@@ -71,6 +71,9 @@ function App() {
     <CategoryCard category={categoriesData['Project-001'][0]} />
     <AddCategoryWindow/>
     <ProjectVersionsTable projectId={'Project-001'}/> */}
+    <RequirementsTable projectId={'Project-001'}/>
+    <RequirementCard requirement={requirementsData['Project-001'][2]}/>
+    <AddRequirementWindow projectId={'Project-001'}/>
     <Router>
       <AssideAccount/>
       <Switch>
