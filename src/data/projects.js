@@ -2,7 +2,7 @@ const projects = {
     'Project-001':
     {
         name: "Sigere", 
-        description: "Este proyecto va a construir una página web.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit leo purus. Duis rutrum ipsum non ex volutpat, ut tristique ex commodo.",
         version: [5, 1],
         lastUpdate: [16, 6, 2021],
         progress: 76,

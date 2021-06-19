@@ -8,3 +8,10 @@
     align-items: center;
     margin-top: 1em;    
 }
+
+.category-card input[type="color"]{
+    -webkit-appearance: none;
+    border: none;
+    width: 30%;
+    height: 35px;
+}

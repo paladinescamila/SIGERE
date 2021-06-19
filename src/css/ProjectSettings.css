@@ -67,3 +67,7 @@
 .add-member:hover{
     background-color: var(--blue-5);
 }
+
+.save-proj-settings{
+    height: 50px;
+}

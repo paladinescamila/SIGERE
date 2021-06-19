@@ -1,12 +1,12 @@
 import React from 'react';
-import '../css/ArtifactsTable.css';
-import ArtifactItem from './ArtifactItem.jsx';
 import artifactsData from '../data/artifacts.js';
 import addIcon from '../img/add.svg';
+import standardDate from '../functions/dateConverter.js';
+
 
 export default function ArtifactsTable({projectId}) {
     return (
-        <table className="art-table">
+        <table className="table">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
@@ -15,7 +15,7 @@ export default function ArtifactsTable({projectId}) {
             {
                 artifactsData[projectId].map((a) => <ArtifactItem artifact={a}/>)
             }
-            <tr className="add-art-button">
+            <tr className="add-button-table">
                 <td colSpan={3}>
                     <div>
                         <img src={addIcon} alt="Add"></img>
@@ -24,5 +24,16 @@ export default function ArtifactsTable({projectId}) {
                 </td>
             </tr>
         </table>
+    )
+}
+
+
+function ArtifactItem({artifact}) {
+    return (
+        <tr>
+            <td>{artifact.id}</td>
+            <td className="table-p">{artifact.name}</td>
+            <td>{standardDate(artifact.date)}</td>
+        </tr>
     )
 }

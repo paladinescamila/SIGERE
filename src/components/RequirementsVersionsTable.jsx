@@ -1,9 +1,8 @@
 import React from 'react';
-import projectsVersions from '../data/projectVersions';
-import standardDate from '../functions/dateConverter';
+import requirementVersionsData from '../data/requirementVersions';
 
 
-export default function ProjectsVersionsTable({projectId}) {
+export default function RequirementsVersionsTable({projectId, requirementId}) {
     return (
         <table className="table">
             <tr>
@@ -13,19 +12,19 @@ export default function ProjectsVersionsTable({projectId}) {
                 <th>Responsable</th>
             </tr>
             {
-                projectsVersions[projectId].map((v) => <ProjectVersionItem version={v}/>)
+                requirementVersionsData[projectId][requirementId].map((v) => <RequirementsVersionsItem version={v}/>)
             }
         </table>
     )
 }
 
 
-function ProjectVersionItem({version}) {
+function RequirementsVersionsItem({version}){
     return (
         <tr>
             <td>{version.version[0]}.{version.version[1]}</td>
-            <td>{standardDate(version.date)}</td>
-            <td className="table-p">{version.description}</td>
+            <td>{version.date}</td>
+            <td>{version.description}</td>
             <td>{version.responsible}</td>
         </tr>
     )
