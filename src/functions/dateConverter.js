@@ -11,4 +11,9 @@ const standardDate = (dateList) => {
     return month + " " + day + ", " + year;
 }
 
+export const getStartDay = (month, year) => {
+    const date = new Date(year, month-1, 1);
+    return date.getDay();
+}
+
 export default standardDate;
