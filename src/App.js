@@ -37,6 +37,7 @@ import AddCategoryWindow from './components/AddCategoryWindow';
 import ProjectVersionsTable from './components/ProjectsVersionsTable';
 import RequirementsVersionsTable from './components/RequirementsVersionsTable';
 import Conector_Projects from './components/Conector_Projects';
+import Calendar from './components/Calendar';
 
 
 function App() {
@@ -72,7 +73,8 @@ function App() {
     <CategoryCard category={categoriesData['Project-001'][0]} />
     <AddCategoryWindow/>
     <ProjectVersionsTable projectId={'Project-001'}/>
-    <RequirementsVersionsTable projectId={'Project-001'} requirementId={'R002'}/> */}
+    <RequirementsVersionsTable projectId={'Project-001'} requirementId={'R002'}/>
+    <Calendar/> */}
     <Router>
       <AssideAccount/>
       <Switch>
