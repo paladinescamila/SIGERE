@@ -9,17 +9,21 @@ export default function Signup({loginOption}) {
     }
 
     return (
-        <form className="signup-form">
-            <div className="signup-form-logo">
-                <img src={SigereLogo} alt="Sigere logo"></img>
+        <div className="signup-container">
+            <div className="signup-sub-container">
+                <form className="signup-form">
+                    <div className="signup-form-logo">
+                        <img src={SigereLogo} alt="Sigere logo"></img>
+                    </div>
+                    <input className="signup-form-user" type="email" placeholder="Correo electrónico"></input>
+                    <input className="signup-form-pass" type="password" placeholder="Contraseña"></input>
+                    <button className="signup-form-button">Crear una cuenta</button>
+                    <div className="signup-form-to-signup">
+                        <p>¿Ya tienes una cuenta?</p>
+                        <p className="signup-form-signup" onClick={changeToLogin}>Inicia sesión</p>
+                    </div>
+                </form>
             </div>
-            <input className="signup-form-user" type="email" placeholder="Correo electrónico"></input>
-            <input className="signup-form-pass" type="password" placeholder="Contraseña"></input>
-            <button className="signup-form-button">Crear una cuenta</button>
-            <div className="signup-form-to-signup">
-                <p>¿Ya tienes una cuenta?</p>
-                <p className="signup-form-signup" onClick={changeToLogin}>Inicia sesión</p>
-            </div>
-        </form>
+        </div>
     )
 }

@@ -203,3 +203,23 @@ select{
     color: #fff;
     border-radius: 0.3em;
 }
+
+
+
+/* DARK BACKGROUND TO CARD WINDOWS */
+
+.dark-background{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-background > div{
+    background-color: #fff;
+}
