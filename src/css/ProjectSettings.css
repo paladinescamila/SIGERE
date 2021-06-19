@@ -19,11 +19,9 @@
 .project-settings > div{
     display: flex;
     flex-direction: column;
-    /* margin: 1em 0; */
 }
 
 .project-settings > button{
-    /* margin: 2em 0 0 0; */
     grid-area: save;
 }
 
@@ -35,7 +33,7 @@
 
 .project-settings-field{
     display: grid;
-    grid-gap: 0.5em;
+    grid-gap: 1em;
     padding: 1em;
 }
 
@@ -48,15 +46,43 @@
     grid-area: members;
 }
 
-.project-members p{
-    margin-bottom: 1em;
-}
-
 .project-members ul{
     list-style: none;
-    display: grid;
-    grid-gap: 0.5em;
     color: #555;
+}
+
+.project-settings li{
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    padding: 0.3em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+}
+
+.project-settings li > div{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.project-settings li > p{
+    padding: 0.3em 0;
+}
+
+.project-settings li > select{
+    grid-area: type;
+    padding: 0.3em;
+}
+
+.project-settings li > button{
+    grid-area: delete;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-settings button > img{
+    width: 15px;
 }
 
 .add-member{

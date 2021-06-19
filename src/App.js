@@ -77,12 +77,13 @@ function App() {
     <CategoriesList/>
     <CategoryCard category={categoriesData['Project-001'][0]} />
     <AddCategoryWindow/>
-    <ProjectVersionsTable projectId={'Project-001'}/>
-      <AssideAccount/>
+    <ProjectVersionsTable projectId={'Project-001'}/> */}
+    {/* <AssideAccount/> */}
+    {/* <Router>
       <Switch>
         <Route path='/requirements' component={Conector_Requirements}/>
         <Route path='/intro' component={IntroductionSection}/>
-        {/* <Route path='/general' component={}/>
+        <Route path='/general' component={}/>
         <Route path='/files' component={}/>
       </Switch>
     </Router> */}
