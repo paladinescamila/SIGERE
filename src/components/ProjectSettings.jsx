@@ -42,7 +42,7 @@ export default function ProjectSettings({projectId}) {
                 </ul>
                 <button className="solid-button add-member">Agregar</button>
             </div>
-            <button className="solid-button">Guardar</button>
+            <button className="save-proj-settings solid-button">Guardar</button>
         </div>
     )
 }
