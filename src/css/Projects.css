@@ -9,6 +9,11 @@
     margin-bottom: 3em;
 }
 
+.searcher-search{
+    display: flex;
+    align-items: center;
+}
+
 .searcher-search .search {
     border-radius: 1em;
     padding: 0.5em 1em;

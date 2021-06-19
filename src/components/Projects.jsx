@@ -21,10 +21,9 @@ export default function Projects({createProjectOption}) {
             <div className="project-list-page">
                 <ProjectsList/>
             </div>
-            <div className="add-project">
-                <img onClick={changeToCreateProject} src={addIcon} alt="Add"></img>
+            <div onClick={changeToCreateProject} className="add-project">
+                <img src={addIcon} alt="Add"></img>
                 <p>Crear proyecto</p>
-                {/* <button className="login-form-button" onClick={changeToCreateProject}>Crear proyecto</button> */}
             </div>
 
         </div>
