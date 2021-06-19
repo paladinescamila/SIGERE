@@ -2,11 +2,15 @@ import React from 'react';
 import '../css/login.css';
 import SigereLogo from '../img/logo.svg';
 
-export default function Login({signupOption}) {
+export default function Login({signupOption, profile}) {
 
     const changeToSignup = () => {
         signupOption();
     };
+
+    const changeToProfile = () => {
+        profile()
+    }
 
     return (
         <form className="login-form">
@@ -15,7 +19,7 @@ export default function Login({signupOption}) {
             </div>
             <input className="login-form-user" type="email" placeholder="Correo electrónico"></input>
             <input className="login-form-pass" type="password" placeholder="Contraseña"></input>
-            <button className="login-form-button">Ingresar</button>
+            <button className="login-form-button" onClick={changeToProfile}>Ingresar</button>
             <div className="login-form-to-signup">
                 <p>¿Aún no tienes una cuenta?</p>
                 <p className="login-form-signup" onClick={changeToSignup}>Regístrate</p>
