@@ -1,5 +1,5 @@
 .project{
-    padding: 3em 5em;
+    padding: 3em 10em;
 }
 
 .searcher-header{
@@ -9,16 +9,8 @@
     margin-bottom: 3em;
 }
 
-.searcher-search{
-    margin-right: 2em;
-    /* background-color: darkmagenta; */
-    display: flex;
-    justify-content: space-between;
-}
-
 .searcher-search .search {
     border-radius: 1em;
-    margin: 0 0.5em;
     padding: 0.5em 1em;
     background-color: #fff;
     border: 0.15em solid #efefef;
@@ -34,14 +26,8 @@
     cursor: pointer;
 }
 
-.searcher-header h2{
-    margin-left: 20px;
-}
-
 .project .search{
     border-radius: 2em;
-    margin: 0 0.5em;
-    padding: 0.5em 1em;
     background-color: #fff;
 }
 
@@ -61,7 +47,8 @@
     cursor: pointer;
     position: fixed;
     bottom: 3em;
-    right: 5em;
+    right: 10em;
+    background-color: #fff;
 }
 
 .add-project:hover{
