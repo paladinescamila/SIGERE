@@ -3,7 +3,11 @@ import requirementsData from "../data/requirements.js";
 import addIcon from '../img/add.svg';
 
 
-export default function RequirementsTable({projectId}) {
+export default function RequirementsTable({projectId, createRequirementOption}) {
+
+    const changeToCreateRequirement = () =>{
+        createRequirementOption();
+    }
 
     return (
         <table className="table">
@@ -19,7 +23,7 @@ export default function RequirementsTable({projectId}) {
             <tr className="add-button-table">
                 <td colSpan="4">
                     <div>
-                        <img src={addIcon} alt="Add"></img>
+                        <img src={addIcon} onClick={changeToCreateRequirement} alt="Add"></img>
                         Agregar requisito
                     </div>
                 </td>

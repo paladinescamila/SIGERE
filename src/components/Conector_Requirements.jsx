@@ -1,20 +1,20 @@
 import React, {Fragment, useState, useRef, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import RequirementsTable from './RequirementsTable';
-import RequirementCard from './RequirementCard';
-import RequirementItem from './RequirementItem';
+import AddRequirementWindow from './AddRequirementWindow';
 
 function Conector_Requirements() {
 
-    const createProjectOption = () => {
-        setDisplay(<CreateProjectWindow projectsOption={projectsOption} />);
+
+    const createRequirementOption =() => {
+      setDisplay(<AddRequirementWindow projectId={'Project-001'} requirementsOption={requirementsOption}/>);
+    }
+
+    const requirementsOption = () =>{
+      setDisplay(<RequirementsTable projectId={'Project-001'} createRequirementOption={createRequirementOption}/>);
     }
       
-    const projectsOption = () => {
-        setDisplay(<Projects createProjectOption={createProjectOption} />);
-    }
-      
-    const [display, setDisplay] = useState(<Projects createProjectOption={createProjectOption} />);
+    const [display, setDisplay] = useState(<RequirementsTable projectId={'Project-001'} createRequirementOption={createRequirementOption}/>);
     return (
         <>
         <div>
@@ -26,4 +26,4 @@ function Conector_Requirements() {
     )
 }
 
-export default Conector_Projects;
+export default Conector_Requirements;

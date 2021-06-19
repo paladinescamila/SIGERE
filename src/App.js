@@ -37,6 +37,7 @@ import AddCategoryWindow from './components/AddCategoryWindow';
 import ProjectVersionsTable from './components/ProjectsVersionsTable';
 import RequirementsVersionsTable from './components/RequirementsVersionsTable';
 import Conector_Projects from './components/Conector_Projects';
+import Conector_Requirements from './components/Conector_Requirements'
 
 
 function App() {
@@ -77,12 +78,15 @@ function App() {
       <AssideAccount/>
       <Switch>
         <Route path='/' exact component={Conector_Projects}/>
-        <Route path='/requirements' component={AccountSettings}/>
+        <Route path='/requirements' component={Conector_Requirements}/>
         {/* <Route path='/intro' component={}/>
         <Route path='/general' component={}/>
         <Route path='/files' component={}/> */}
       </Switch>
     </Router>
+    {/* <RequirementsTable projectId={'Project-001'}/>
+    <RequirementCard requirement={requirementsData['Project-001'][2]}/>
+    <AddRequirementWindow projectId={'Project-001'}/> */}
       {/* <div class="container">
         <div class="login-or-signup">
           {display}

@@ -2,7 +2,10 @@ import React from 'react';
 import '../css/AddRequirementWindow.css';
 import categoriesData from '../data/categories';
 
-export default function AddRequirementWindow({projectId}) {
+export default function AddRequirementWindow({projectId, requirementsOption}) {
+    const changeToRequirements = () => {
+        requirementsOption();
+    };
     return (
         <div className="add-req-win win-card">
             <div className="add-req-fields">
@@ -36,7 +39,7 @@ export default function AddRequirementWindow({projectId}) {
             </div>
             <div className="card-2-buttons">
                 <button className="add-req-cancel empty-button">Cancelar</button>
-                <button className="add-req-save solid-button">Agregar</button>
+                <button onClick={changeToRequirements} className="add-req-save solid-button">Agregar</button>
             </div>
         </div>
     )
