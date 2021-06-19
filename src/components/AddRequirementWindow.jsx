@@ -10,7 +10,7 @@ export default function AddRequirementWindow({projectId, requirementsOption}) {
         <div className="add-req-win win-card">
             <div className="add-req-fields">
                 <div className="add-req-title card-title">
-                    <p>Agregar requerimiento</p>
+                    <p>Agregar requisito</p>
                 </div>
                 <div className="add-req-description">
                     <textarea className="textarea" placeholder="Escriba una descripción..."></textarea>

@@ -3,6 +3,8 @@ import '../css/ProjectSettings.css';
 import collaboratorsData from '../data/collaborators';
 import projectsData from '../data/projects';
 import standardDate from '../functions/dateConverter';
+import deleteIcon from '../img/delete.svg';
+import usersData from '../data/users';
 
 export default function ProjectSettings({projectId}) {
     return (
@@ -37,7 +39,18 @@ export default function ProjectSettings({projectId}) {
                 <p>Miembros</p>
                 <ul>
                     {
-                        collaboratorsData[projectId].map((u) => <li>{u.email} ({u.type})</li>)
+                        collaboratorsData[projectId].map((u) => 
+                            <li>
+                                <p>{usersData[u.email].name} ({u.email})</p>
+                                <div>
+                                    <select>
+                                            <option selected={u.type === "Administrador"}>Administrador</option>
+                                            <option selected={u.type === "Colaborador"}>Colaborador</option>
+                                            <option selected={u.type === "Invitado"}>Invitado</option>
+                                    </select>
+                                    <button className="delete-button"><img src={deleteIcon} alt="Delete"></img></button>
+                                </div>
+                            </li>)
                     }
                 </ul>
                 <button className="solid-button add-member">Agregar</button>

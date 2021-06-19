@@ -27,7 +27,7 @@ const requirements = {
             description: "El sistema debe permitir que un usuario pueda crear o modificar un requisito.", 
             state: "Validado",
             category: "Requisitos", 
-            type: "Funcional", 
+            type: "No funcional", 
             priority: 2,
             version: [3, 1],
             created: [13, 6, 2021],

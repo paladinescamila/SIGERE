@@ -6,7 +6,7 @@ const collaborators = {
         },
         {
             email: "jerry@sigere.com",
-            type: "Miembro",
+            type: "Colaborador",
         },
         {
             email: "tita@sigere.com",

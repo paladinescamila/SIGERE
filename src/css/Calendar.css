@@ -5,6 +5,7 @@
     border-top: 5px solid var(--blue-5);
     margin: 5em;
     border-radius: 0.5em;
+    background-color: #fff;
 }
 
 .calendar-header{
