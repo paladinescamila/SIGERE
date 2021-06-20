@@ -14,7 +14,9 @@ function Conector_archivos() {
     const artifactDiagramsOption = () =>{
         setDisplay(
             <div>
+                <div><h2>Artefactos</h2></div>
                 <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption}/>
+                <div><h2>Diagramas</h2></div>
                 <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption}/>
             </div>
         );
@@ -35,19 +37,22 @@ function Conector_archivos() {
         setDisplay(<diagramsData diagram={diagramsData['Project-001'][0]} artifactDiagramsOption={artifactDiagramsOption}/>);
     }
 
-    const [display, setDisplay] = useState( <div>
+    const [display, setDisplay] = useState(
+    <div>
+        <div><h2>Artefactos</h2></div>
         <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption} viewArtifact={viewArtifact}/>
+        <div><h2>Diagramas</h2></div>
         <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption} viewDiagram={viewDiagram}/>
     </div>);
 
     return (
         <>
         <div>
-        <div>
-          {display}
+            <div className="page">
+                {display}
+            </div>
         </div>
-      </div>
-      </>
+        </>
     )
 }
 

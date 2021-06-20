@@ -22,7 +22,8 @@ function Conector_Requirements() {
     return (
         <>
         <div>
-        <div>
+        <div className="page">
+          <div><h2>Requisitos</h2></div>
           {display}
         </div>
       </div>
