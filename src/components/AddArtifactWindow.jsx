@@ -2,7 +2,10 @@ import React from 'react';
 import '../css/AddArtifactWindow.css';
 import categoriesData from '../data/categories';
 
-export default function AddArtifactWindow({projectId}) {
+export default function AddArtifactWindow({projectId, artifactDiagramsOption}) {
+    const changeToArtifacs = () => {
+        artifactDiagramsOption();
+    };
     return (
         <div className="dark-background">
             <div className="add-art-win win-card">
@@ -14,7 +17,7 @@ export default function AddArtifactWindow({projectId}) {
                 </div>
                 <div className="card-2-buttons">
                     <button className="add-art-cancel empty-button">Cancelar</button>
-                    <button className="add-art-save solid-button">Guardar</button>
+                    <button className="add-art-save solid-button" onClick={changeToArtifacs}>Guardar</button>
                 </div>
             </div>
         </div>

@@ -1,7 +1,10 @@
 import React from 'react';
 import '../css/AddDiagramWindow.css';
 
-export default function AddDiagramWindow() {
+export default function AddDiagramWindow({artifactDiagramsOption}) {
+    const changeToDiagrams = () => {
+        artifactDiagramsOption();
+    };
     return (
         <div className="dark-background">
             <div className="win-card add-diagram-win">
@@ -21,7 +24,7 @@ export default function AddDiagramWindow() {
                 </div>
                 <div className="card-2-buttons">
                     <button className="empty-button">Cancelar</button>
-                    <button className="solid-button">Guardar</button>
+                    <button className="solid-button" onClick={changeToDiagrams}>Guardar</button>
                 </div>
             </div>
         </div>
