@@ -5,6 +5,10 @@ import ArtifactsTable from './ArtifactsTable';
 import DiagramsTable from './DiagramsTable';
 import AddArtifactWindow from './AddArtifactWindow';
 import AddDiagramWindow from './AddDiagramWindow';
+import DiagramCard from './DiagramCard';
+
+import diagramsData from '../data/diagrams';
+import artifactsData from '../data/artifacts';
 function Conector_archivos() {
 
     const artifactDiagramsOption = () =>{
@@ -17,15 +21,23 @@ function Conector_archivos() {
     };
 
     const createArtifactOption = () => {
-        setDisplay(<AddArtifactWindow projectId={'Project-001'} artifactDiagramsOption={artifactDiagramsOption}/>);
+        setDisplay(<AddArtifactWindow projectId={'Project-001'} artifactDiagramsOption={artifactDiagramsOption} viewArtifact={viewArtifact}/>);
     };
     const createDiagramOption = () => {
-        setDisplay(<AddDiagramWindow projectId={'Project-001'} artifactDiagramsOption={artifactDiagramsOption}/>);
+        setDisplay(<AddDiagramWindow projectId={'Project-001'} artifactDiagramsOption={artifactDiagramsOption} viewDiagram={viewDiagram}/>);
     };
 
+    const viewArtifact = () => {
+        setDisplay(<ArtifactCard artifact={artifactsData['Project-001'][0]} artifactDiagramsOption={artifactDiagramsOption}/>);
+    }
+
+    const viewDiagram = () => {
+        setDisplay(<diagramsData diagram={diagramsData['Project-001'][0]} artifactDiagramsOption={artifactDiagramsOption}/>);
+    }
+
     const [display, setDisplay] = useState( <div>
-        <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption}/>
-        <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption}/>
+        <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption} viewArtifact={viewArtifact}/>
+        <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption} viewDiagram={viewDiagram}/>
     </div>);
 
     return (

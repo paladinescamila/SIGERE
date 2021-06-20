@@ -18,7 +18,7 @@ function Conector_Requirements() {
       setDisplay(<RequirementCard requirement={requirementsData['Project-001'][2]} requirementsOption={requirementsOption}/>);
     };
       
-    const [display, setDisplay] = useState(<RequirementsTable projectId={'Project-001'} createRequirementOption={createRequirementOption}/>);
+    const [display, setDisplay] = useState(<RequirementsTable projectId={'Project-001'} createRequirementOption={createRequirementOption} viewRequirement={viewRequirement}/>);
     return (
         <>
         <div>

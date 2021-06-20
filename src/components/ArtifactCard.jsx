@@ -3,7 +3,10 @@ import "../css/ArtifactCard.css";
 import artifactsData from '../data/artifacts';
 import standardDate from '../functions/dateConverter';
 
-export default function ArtifactCard({artifact}) {
+export default function ArtifactCard({artifact, artifactDiagramsOption}) {
+    const changeToArtifactsOption = () =>{
+        artifactDiagramsOption();
+    };
 
     return (
         <div className="artifact-card win-card">
@@ -20,7 +23,7 @@ export default function ArtifactCard({artifact}) {
             <div className="card-3-buttons">
                 <button className="artifact-card-cancel empty-button">Cancelar</button>
                 <button className="artifact-card-delete delete-button">Eliminar</button>
-                <button className="artifact-card-save solid-button">Guardar</button>
+                <button className="artifact-card-save solid-button" onClick={changeToArtifactsOption}>Guardar</button>
             </div>
         </div>
     )

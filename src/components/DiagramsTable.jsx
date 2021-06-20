@@ -3,10 +3,24 @@ import diagramsData from '../data/diagrams';
 import addIcon from '../img/add.svg';
 
 
-export default function DiagramsTable({projectId, createDiagramOption}) {
+export default function DiagramsTable({projectId, createDiagramOption, viewDiagram}) {
+
+    function DiagramItem({diagram}) {
+        return (
+            <tr onClick={changeToViewDiagrams}>
+                <td>{diagram.id}</td>
+                <td>{diagram.type}</td>
+            </tr>
+        )
+    };
+    
     const changeToCreateDiagram = () => {
         createDiagramOption();
     };
+    const changeToViewDiagrams = () => {
+        viewDiagram();
+    };
+    
     return (
         <table className="table">
             <tr>
@@ -29,11 +43,3 @@ export default function DiagramsTable({projectId, createDiagramOption}) {
 }
 
 
-function DiagramItem({diagram}) {
-    return (
-        <tr>
-            <td>{diagram.id}</td>
-            <td>{diagram.type}</td>
-        </tr>
-    )
-}

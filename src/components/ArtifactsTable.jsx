@@ -4,10 +4,26 @@ import addIcon from '../img/add.svg';
 import standardDate from '../functions/dateConverter.js';
 
 
-export default function ArtifactsTable({projectId, createArtifactOption}) {
+export default function ArtifactsTable({projectId, createArtifactOption, viewArtifact}) {
+
+    function ArtifactItem({artifact}) {
+        return (
+            <tr onClick={changeToViewArtifacts}>
+                <td>{artifact.id}</td>
+                <td className="table-p">{artifact.name}</td>
+                <td>{standardDate(artifact.date)}</td>
+            </tr>
+        )
+    };
+    
     const changeToCreateArtifact = () => {
         createArtifactOption();
     };
+
+    const changeToViewArtifacts = () => {
+        viewArtifact();
+    };
+    
     return (
         <table className="table">
             <tr>
@@ -31,12 +47,3 @@ export default function ArtifactsTable({projectId, createArtifactOption}) {
 }
 
 
-function ArtifactItem({artifact}) {
-    return (
-        <tr>
-            <td>{artifact.id}</td>
-            <td className="table-p">{artifact.name}</td>
-            <td>{standardDate(artifact.date)}</td>
-        </tr>
-    )
-}

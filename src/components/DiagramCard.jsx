@@ -2,9 +2,11 @@ import React from 'react';
 import '../css/DiagramCard.css';
 import contextDiagram from '../img/contextDiagram.png';
 
-export default function DiagramCard({diagram}) {
-
+export default function DiagramCard({diagram, artifactDiagramsOption}) {
     const photo = '../data/diagrama_de_componentes.png';
+    const changeToDiagramOption = () => {
+        artifactDiagramsOption();
+    };
     
     return (
         <div className="win-card diagram-card">
@@ -22,7 +24,7 @@ export default function DiagramCard({diagram}) {
             <div className="card-3-buttons diagram-card-buttons">
                 <button className="empty-button">Cancelar</button>
                 <button className="delete-button">Eliminar</button>
-                <button className="solid-button">Guardar</button>
+                <button className="solid-button" onClick={changeToDiagramOption}>Guardar</button>
             </div>
         </div>
     )
