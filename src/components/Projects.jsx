@@ -10,13 +10,9 @@ export default function Projects({createProjectOption}) {
         createProjectOption();
     };
     return (
-        <div className="project">
+        <div className="page">
             <div className="searcher-header">
                 <h2>Mis Proyectos</h2>
-                <div className="searcher-search">
-                    <input className="input search" type="text" placeholder="Buscar proyecto..."></input>
-                    <img src={searchButton} alt="Search"></img>
-                </div>
             </div>
             <div className="project-list-page">
                 <ProjectsList/>

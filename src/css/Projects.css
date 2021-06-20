@@ -1,12 +1,7 @@
-.project{
-    padding: 3em 10em;
-}
-
 .searcher-header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 3em;
 }
 
 .searcher-search{
@@ -15,29 +10,22 @@
 }
 
 .searcher-search .search {
-    border-radius: 1em;
+    border-radius: 2em;
     padding: 0.5em 1em;
     background-color: #fff;
     border: 0.15em solid #efefef;
 }
 
+.searcher-search .search:focus{
+    border: 0.15em solid #ccc;
+}
+
 .searcher-search img{
-    /* background-color: darkslateblue; */
     width: 1em;
-    height: 1em;
-    align-self: center;
+    height: 1em;    
     position: relative;
     right: 2em;
     cursor: pointer;
-}
-
-.project .search{
-    border-radius: 2em;
-    background-color: #fff;
-}
-
-.project .search:focus{
-    border: 0.15em solid #ccc;
 }
 
 .add-project{
@@ -57,7 +45,7 @@
 }
 
 .add-project:hover{
-    background-color: #eee;
+    background-color: #fafafa;
 }
 
 .add-project img{

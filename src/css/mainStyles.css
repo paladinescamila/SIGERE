@@ -223,3 +223,15 @@ select{
 .dark-background > div{
     background-color: #fff;
 }
+
+.page{
+    padding: 3em 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page > div:nth-of-type(1){
+    margin-bottom: 5em;
+}
