@@ -59,6 +59,8 @@ function App() {
     <>
     <Super/>
     {/* <AccountSettings email={'pepito@sigere.com'}/>
+    <ProjectSettings projectId={'Project-001'}/> */}
+    {/* <AccountSettings email={'pepito@sigere.com'}/>
     <Header/>
     <IntroductionSection/>
     <RequirementsTable projectId={'Project-001'}/>
