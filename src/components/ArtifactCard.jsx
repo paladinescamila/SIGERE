@@ -22,8 +22,8 @@ export default function ArtifactCard({artifact, artifactDiagramsOption}) {
                     <a href={"../src/data/"+artifact.file} download>Descargar</a>
                 </div>
                 <div className="card-3-buttons">
-                    <button className="artifact-card-cancel empty-button">Cancelar</button>
-                    <button className="artifact-card-delete delete-button">Eliminar</button>
+                    <button className="artifact-card-cancel empty-button" onClick={changeToArtifactsOption}>Cancelar</button>
+                    <button className="artifact-card-delete delete-button" onClick={changeToArtifactsOption}>Eliminar</button>
                     <button className="artifact-card-save solid-button" onClick={changeToArtifactsOption}>Guardar</button>
                 </div>
             </div>

@@ -23,8 +23,8 @@ export default function DiagramCard({diagram, artifactDiagramsOption}) {
                     </select>
                 </div>
                 <div className="card-3-buttons diagram-card-buttons">
-                    <button className="empty-button">Cancelar</button>
-                    <button className="delete-button">Eliminar</button>
+                    <button className="empty-button" onClick={changeToDiagramOption}>Cancelar</button>
+                    <button className="delete-button" onClick={changeToDiagramOption}>Eliminar</button>
                     <button className="solid-button" onClick={changeToDiagramOption}>Guardar</button>
                 </div>
             </div>

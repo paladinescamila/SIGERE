@@ -66,8 +66,8 @@ export default function RequirementCard({requirement, requirementsOption}) {
                     </div>
                 </div>
                 <div className="card-3-buttons">
-                    <button className="req-cancel empty-button">Cancelar</button>
-                    <button className="req-delete delete-button">Eliminar</button>
+                    <button className="req-cancel empty-button" onClick={changeToRequirements}>Cancelar</button>
+                    <button className="req-delete delete-button" onClick={changeToRequirements}>Eliminar</button>
                     <button className="req-save solid-button" onClick={changeToRequirements}>Guardar</button>
                 </div>
             </div>

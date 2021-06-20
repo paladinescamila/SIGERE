@@ -13,10 +13,9 @@ function AssideAccount() {
         <>
             <div className="navbar">
                 <Link to="#" className='menu-bars'>
-                    <FaIcons.FaBars onClick={showSidebar}/>
+                    <AiIcons.AiFillProject onClick={showSidebar}/>
                 </Link>
                 <div className={sidebar ? 'header-n moved' : 'header-n'}>
-                <Header/>
                 </div>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
