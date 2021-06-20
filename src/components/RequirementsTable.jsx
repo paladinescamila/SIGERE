@@ -32,7 +32,7 @@ export default function RequirementsTable({projectId, createRequirementOption, v
         viewRequirement();
     };
 
-   
+
 
     return (
         <table className="table">
@@ -46,10 +46,10 @@ export default function RequirementsTable({projectId, createRequirementOption, v
                 requirementsData[projectId].map((r) => <RequirementItem requirement={r} />)
                 
             }
-            <tr className="add-button-table">
+            <tr className="add-button-table" onClick={changeToCreateRequirement}>
                 <td colSpan="4">
                     <div>
-                        <img src={addIcon} onClick={changeToCreateRequirement} alt="Add"></img>
+                        <img src={addIcon} alt="Add"></img>
                         Agregar requisito
                     </div>
                 </td>

@@ -30,10 +30,10 @@ export default function DiagramsTable({projectId, createDiagramOption, viewDiagr
                 {
                     diagramsData[projectId].map((d) => <DiagramItem diagram={d}/>)
                 }
-            <tr className="add-button-table">
+            <tr className="add-button-table" onClick={changeToCreateDiagram}>
                 <td colSpan="4">
                     <div>
-                        <img src={addIcon} alt="Add" onClick={changeToCreateDiagram}></img>
+                        <img src={addIcon} alt="Add"></img>
                         <p>Agregar diagrama</p>
                     </div>
                 </td>

@@ -34,10 +34,10 @@ export default function ArtifactsTable({projectId, createArtifactOption, viewArt
             {
                 artifactsData[projectId].map((a) => <ArtifactItem artifact={a}/>)
             }
-            <tr className="add-button-table">
+            <tr className="add-button-table" onClick={changeToCreateArtifact}>
                 <td colSpan={3}>
                     <div>
-                        <img src={addIcon} alt="Add" onClick={changeToCreateArtifact}></img>
+                        <img src={addIcon} alt="Add"></img>
                         <p>Agregar artefacto</p>
                     </div>
                 </td>
