@@ -9,6 +9,7 @@ import DiagramCard from './DiagramCard';
 
 import diagramsData from '../data/diagrams';
 import artifactsData from '../data/artifacts';
+import "../css/files.css";
 function Conector_archivos() {
 
     const artifactDiagramsOption = () =>{
@@ -39,10 +40,15 @@ function Conector_archivos() {
 
     const [display, setDisplay] = useState(
     <div>
-        <div><h2>Artefactos</h2></div>
-        <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption} viewArtifact={viewArtifact}/>
-        <div><h2>Diagramas</h2></div>
-        <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption} viewDiagram={viewDiagram}/>
+        <div className="text">
+            <h2>Artefactos</h2>
+            <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption} viewArtifact={viewArtifact}/>
+        </div>
+        <div className="text">
+            <h2>Diagramas</h2>
+            <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption} viewDiagram={viewDiagram}/>
+        </div>
+        
     </div>);
 
     return (

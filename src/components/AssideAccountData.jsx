@@ -2,16 +2,17 @@ import React from 'react';
 
 
 export const SidebarDataAccount = [
-    {
-        title:'Home',
-        path: '/',
-        /*icon: <AiIcons.AiFillHome/>,*/
-        cName: 'nav-text'
-    },
+    
     {
         title:'Requisitos',
         path: '/requirements',
         /*icon: <BsIcons.BsCardChecklist/>,*/
+        cName: 'nav-text'
+    },
+    {
+        title:'Versiones',
+        path: '/version',
+        /*icon: <AiIcons.AiFillHome/>,*/
         cName: 'nav-text'
     },
     {

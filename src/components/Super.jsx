@@ -12,6 +12,7 @@ import Conector_archivos from './conector_archivos';
 import Conector_Account_Settings from './conector_Account_Settings';
 import Conector_Project_Settings from './Conector_Project_Settings';
 import Conector_Home from './Conector_Home';
+import Conector_Versiones from './Conector_Versiones';
 import IntroductionSection from './IntroductionSection';
 import ProjectSettings from './ProjectSettings';
 import AccountSettings from './AccountSettings';
@@ -52,7 +53,7 @@ function Super() {
             <Route path='/settings' component={Conector_Account_Settings}/>
             
             {/* rutas para el proyecto */}
-            <Route exact path='/' exact component={Conector_Projects}/>
+            <Route path='/version' component={Conector_Versiones}/>
             <Route path='/requirements' component={Conector_Requirements}/>
             <Route path='/intro' component={IntroductionSection}/>
             <Route path='/files' component={Conector_archivos}/>

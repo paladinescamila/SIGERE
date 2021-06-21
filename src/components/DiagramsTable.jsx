@@ -10,6 +10,7 @@ export default function DiagramsTable({projectId, createDiagramOption, viewDiagr
             <tr onClick={changeToViewDiagrams}>
                 <td>{diagram.id}</td>
                 <td>{diagram.type}</td>
+                <td>{diagram.description}</td>
             </tr>
         )
     };
@@ -26,6 +27,7 @@ export default function DiagramsTable({projectId, createDiagramOption, viewDiagr
             <tr>
                 <th>ID</th>
                 <th>Diagrama</th>
+                <th>Descripción</th>
             </tr>
                 {
                     diagramsData[projectId].map((d) => <DiagramItem diagram={d}/>)
