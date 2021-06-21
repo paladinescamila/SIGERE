@@ -15,10 +15,14 @@ function Conector_archivos() {
     const artifactDiagramsOption = () =>{
         setDisplay(
             <div>
-                <div><h2>Artefactos</h2></div>
-                <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption}/>
-                <div><h2>Diagramas</h2></div>
-                <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption}/>
+                <div className="flex-align">
+                    <h2>Artefactos</h2>
+                    <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption}/>
+                </div>
+                <div className="flex-align add-margin">
+                    <h2>Diagramas</h2>
+                    <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption}/>
+                </div>
             </div>
         );
     };
@@ -32,19 +36,19 @@ function Conector_archivos() {
 
     const viewArtifact = () => {
         setDisplay(<ArtifactCard artifact={artifactsData['Project-001'][0]} artifactDiagramsOption={artifactDiagramsOption}/>);
-    }
+    };
 
     const viewDiagram = () => {
-        setDisplay(<diagramsData diagram={diagramsData['Project-001'][0]} artifactDiagramsOption={artifactDiagramsOption}/>);
-    }
+        setDisplay(<DiagramCard diagram={diagramsData['Project-001'][0]} artifactDiagramsOption={artifactDiagramsOption}/>);
+    };
 
     const [display, setDisplay] = useState(
     <div>
-        <div className="text">
+        <div className="flex-align">
             <h2>Artefactos</h2>
             <ArtifactsTable projectId={'Project-001'} createArtifactOption={createArtifactOption} viewArtifact={viewArtifact}/>
         </div>
-        <div className="text">
+        <div className="flex-align add-margin">
             <h2>Diagramas</h2>
             <DiagramsTable projectId={'Project-001'} createDiagramOption={createDiagramOption} viewDiagram={viewDiagram}/>
         </div>

@@ -3,7 +3,10 @@ import ProjectsVersionsTable from './ProjectsVersionsTable'
 
 function Conector_Versiones() {
     return (
-        <ProjectsVersionsTable projectId={'Project-001'}/>
+        <div className="page">
+            <div><h2>Versiones</h2></div>
+            <ProjectsVersionsTable projectId={'Project-001'}/>
+        </div>
     )
 }
 
