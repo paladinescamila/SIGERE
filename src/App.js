@@ -39,6 +39,7 @@ import RequirementsVersionsTable from './components/RequirementsVersionsTable';
 import Conector_Projects from './components/Conector_Projects';
 import Calendar from './components/Calendar';
 import Conector_Requirements from './components/Conector_Requirements'
+import Home from './components/Home';
 
 
 import Super from './components/Super';
@@ -58,8 +59,6 @@ function App() {
   return (
     <>
     <Super/>
-    {/* <AccountSettings email={'pepito@sigere.com'}/>
-    <ProjectSettings projectId={'Project-001'}/> */}
     {/* <AccountSettings email={'pepito@sigere.com'}/>
     <Header/>
     <IntroductionSection/>
