@@ -1,7 +1,10 @@
 import React from 'react';
 import '../css/AddCategoryWindow.css';
 
-export default function AddCategoryWindow() {
+export default function AddCategoryWindow({homeOption}) {
+    const changeToHomeOption = () => {
+        homeOption();
+    };
     return (
         <div className="dark-background">
             <div className="add-category win-card">
@@ -16,7 +19,7 @@ export default function AddCategoryWindow() {
                 </div>
                 <div className="card-2-buttons">
                     <button className="empty-button">Cancelar</button>
-                    <button className="solid-button">Guardar</button>
+                    <button className="solid-button" onClick={changeToHomeOption}>Guardar</button>
                 </div>
             </div>
         </div>

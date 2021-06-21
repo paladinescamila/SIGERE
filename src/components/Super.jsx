@@ -11,6 +11,7 @@ import Conector_Requirements from './Conector_Requirements';
 import Conector_archivos from './conector_archivos';
 import Conector_Account_Settings from './conector_Account_Settings';
 import Conector_Project_Settings from './Conector_Project_Settings';
+import Conector_Home from './Conector_Home';
 import IntroductionSection from './IntroductionSection';
 import ProjectSettings from './ProjectSettings';
 import AccountSettings from './AccountSettings';
@@ -44,7 +45,7 @@ function Super() {
           <AssideAccount/>
           <Switch>
             {/* rutas para el usuario */}
-            <Route exact path='/' exact component={Home}/>
+            <Route exact path='/' exact component={Conector_Home}/>
             <Route path='/projects' component={Conector_Projects}/>
             {/* <Route path='/shared' component={}/> */}
             <Route path='/calendar' component={Calendar}/>

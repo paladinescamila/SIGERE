@@ -1,12 +1,47 @@
 import React from 'react'
 import Calendar from './Calendar'
-import CategoriesList from './CategoriesList'
 import * as AiIcons from "react-icons/ai"
 import * as GrIcons from "react-icons/gr"
 import * as RiIcons from "react-icons/ri"
 
+import '../css/CategoriesList.css';
+import addIcon from '../img/add.svg';
+
 import "../css/Home.css"
-function Home() {
+function Home({createCategoryOption, categoryOption}) {
+
+    const changeToCreateCategory = () =>{
+        createCategoryOption();
+    }
+
+    const changeToCategory =() => {
+        categoryOption();
+    }
+    const categories = [
+        {
+            text: "Requisitos",
+            color: "#de1f1f"
+        },
+        {
+            text: "Proyectos",
+            color: "#4f30ff"
+        },
+        {
+            text: "Versionamiento",
+            color: "#ab1fde"
+        },
+        {
+            text: "Usuarios",
+            color: "#de4f1f"
+        },
+        {
+            text: "Bases de datos",
+            color: "#268000"
+        },
+    ]
+
+    
+    
     return (
         <>
         <div className="container">
@@ -25,7 +60,17 @@ function Home() {
                 </div>
             </div>
             <div className="home_second">
-                <CategoriesList/>
+                <div className="categories-list">
+                    <div className="categories-list-title">
+                        <p>Categorías</p>
+                        <img src={addIcon} alt="Add" onClick={changeToCreateCategory}></img>
+                    </div>
+                    <ul>
+                        {
+                            categories.map((cat) => <li style={{backgroundColor: cat.color}} onClick={changeToCategory}>{cat.text}</li>)
+                        }
+                    </ul>
+                </div>
                 <Calendar/>
             </div>
         </div>

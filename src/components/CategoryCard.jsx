@@ -2,7 +2,12 @@ import React from 'react';
 import '../css/CategoryCard.css';
 import categories from '../data/categories';
 
-export default function CategoryCard({category}) {
+export default function CategoryCard({category, homeOption}) {
+
+    const changeToHomeOption = () => {
+        homeOption();
+    };
+
     return (
         <div className="dark-background">
             <div className="win-card category-card">
@@ -16,9 +21,9 @@ export default function CategoryCard({category}) {
                     <input type="color" value={category.color}></input>
                 </div>
                 <div className="card-3-buttons">
-                    <button className="empty-button">Cancelar</button>
-                    <button className="delete-button">Eliminar</button>
-                    <button className="solid-button">Guardar</button>
+                    <button className="empty-button" onClick={changeToHomeOption}>Cancelar</button>
+                    <button className="delete-button" onClick={changeToHomeOption}>Eliminar</button>
+                    <button className="solid-button" onClick={changeToHomeOption}>Guardar</button>
                 </div>
             </div>
         </div>
